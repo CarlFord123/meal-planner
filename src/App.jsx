@@ -6,21 +6,25 @@ const MEALS = {
     { name: "Banana wrap", cal: 353, c: 63, f: 6, p: 7, ing: [
       { item: "Banana", qty: 1, unit: "" },
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
-      { item: "Honey", qty: 15, unit: "g" },
+      { item: "Honey", qty: 15, unit: "g" },,
+      method: "Lay wrap flat. Peel and place banana at one end. Drizzle honey over banana. Roll wrap tightly around banana and slice in half."
     ]},
     { name: "PB&J Muffin", cal: 353, c: 65, f: 7, p: 12, ing: [
       { item: "English muffin", qty: 2, unit: "" },
       { item: "Peanut butter", qty: 10, unit: "g" },
-      { item: "Jam", qty: 20, unit: "g" },
+      { item: "Jam", qty: 20, unit: "g" },,
+      method: "Toast English muffins until golden. Spread peanut butter on one half and jam on the other. Press together and enjoy."
     ]},
     { name: "Cocopops & banana", cal: 349, c: 76, f: 5, p: 5, ing: [
       { item: "Cocopops", qty: 55, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },
+      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },,
+      method: "Pour Cocopops into a bowl. Add almond milk. Slice banana on top and eat immediately so cereal stays crunchy."
     ]},
     { name: "Crumpets & jam", cal: 353, c: 73, f: 2, p: 10, ing: [
       { item: "Circle crumpet", qty: 3, unit: "" },
-      { item: "Jam", qty: 30, unit: "g" },
+      { item: "Jam", qty: 30, unit: "g" },,
+      method: "Toast crumpets until golden and crispy. Spread jam generously over each one while still warm."
     ]},
   ],
   breakfast: [
@@ -29,32 +33,37 @@ const MEALS = {
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Chia seeds", qty: 15, unit: "g" },
       { item: "Pink lady apple", qty: 1, unit: "" },
-      { item: "Walnuts", qty: 15, unit: "g" },
+      { item: "Walnuts", qty: 15, unit: "g" },,
+      method: "Mix oats, protein powder and chia seeds in a jar. Pour in enough almond milk to cover well. Stir, seal and refrigerate overnight. In the morning top with diced apple and roughly chopped walnuts."
     ]},
     { name: "Overnight oats chia (banana PB)", cal: 491, c: 49, f: 16, p: 39, ing: [
       { item: "Oats", qty: 30, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Chia seeds", qty: 15, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Peanut butter", qty: 12, unit: "g" },
+      { item: "Peanut butter", qty: 12, unit: "g" },,
+      method: "Mix oats, protein powder and chia seeds in a jar. Add almond milk to cover. Stir and refrigerate overnight. Top with sliced banana and a dollop of peanut butter before eating."
     ]},
     { name: "Brekky bagel (salmon cream cheese)", cal: 503, c: 52, f: 19, p: 28, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Smoked salmon", qty: 80, unit: "g" },
-      { item: "Light cream cheese", qty: 60, unit: "g" },
+      { item: "Light cream cheese", qty: 60, unit: "g" },,
+      method: "Slice and toast bagel. Spread cream cheese generously on both halves. Layer smoked salmon on top. Season with black pepper if desired."
     ]},
     { name: "Brekky bagel (cheesy bacon & egg)", cal: 511, c: 52, f: 19, p: 31, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Short cut bacon", qty: 100, unit: "g" },
       { item: "Egg", qty: 1, unit: "" },
-      { item: "Sugar reduced bbq sauce", qty: 10, unit: "g" },
+      { item: "Sugar reduced bbq sauce", qty: 10, unit: "g" },,
+      method: "Cook bacon in a pan over medium heat until crispy. Fry or scramble egg in the same pan. Toast bagel. Layer cheese, bacon and egg on the base, drizzle with BBQ sauce and top with the other half."
     ]},
     { name: "Brekky bagel (avo cottage cheese + chicken)", cal: 508, c: 52, f: 19, p: 36, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Light cottage cheese", qty: 50, unit: "g" },
       { item: "Avocado", qty: 50, unit: "g" },
-      { item: "Chicken breast (cooked)", qty: 100, unit: "g" },
+      { item: "Chicken breast (cooked)", qty: 100, unit: "g" },,
+      method: "Toast bagel. Mash avocado with a pinch of salt. Spread cottage cheese on base, then avocado. Top with sliced cooked chicken breast and close bagel."
     ]},
     { name: "Fudgy pumpkin brownie", cal: 514, c: 65, f: 17, p: 31, ing: [
       { item: "Butternut pumpkin (raw)", qty: 200, unit: "g" },
@@ -65,7 +74,8 @@ const MEALS = {
       { item: "Sugar free maple syrup", qty: 10, unit: "g" },
       { item: "Almond butter", qty: 15, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Chobani light", qty: 50, unit: "g" },
+      { item: "Chobani light", qty: 50, unit: "g" },,
+      method: "Preheat oven to 180°C. Steam or microwave pumpkin until soft, then mash well. Mix in egg, protein powder, cacao powder, baking powder, maple syrup and almond butter until smooth. Pour into a greased small baking dish. Press chocolate squares into the top. Bake 20–25 mins until just set. Serve with Chobani on the side."
     ]},
     { name: "Apple muffin", cal: 511, c: 65, f: 17, p: 31, ing: [
       { item: "Rolled oats", qty: 40, unit: "g" },
@@ -75,14 +85,16 @@ const MEALS = {
       { item: "Granny smith apple", qty: 1, unit: "" },
       { item: "Almond butter", qty: 10, unit: "g" },
       { item: "Chobani light", qty: 50, unit: "g" },
-      { item: "Walnuts", qty: 10, unit: "g" },
+      { item: "Walnuts", qty: 10, unit: "g" },,
+      method: "Preheat oven to 175°C. Mix oats, protein powder and baking powder. Stir in honey, almond butter, Chobani and grated apple. Fold in walnuts. Spoon into muffin tins and bake 18–22 mins until golden."
     ]},
     { name: "Yoghurt bowl (choc banana)", cal: 508, c: 66, f: 13, p: 36, ing: [
       { item: "Chobani light", qty: 200, unit: "g" },
       { item: "Macro Mike almond protein", qty: 20, unit: "g" },
       { item: "Rice bubbles", qty: 25, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Mayver's hazelnut cashew cacao spread", qty: 20, unit: "g" },
+      { item: "Mayver's hazelnut cashew cacao spread", qty: 20, unit: "g" },,
+      method: "Add Chobani to a bowl. Stir through protein powder until smooth. Top with rice bubbles, sliced banana and a drizzle of hazelnut cacao spread."
     ]},
     { name: "Chia pudding (banana PB honey)", cal: 504, c: 49, f: 19, p: 35, ing: [
       { item: "Chia seeds", qty: 20, unit: "g" },
@@ -90,13 +102,15 @@ const MEALS = {
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
       { item: "Peanut butter", qty: 20, unit: "g" },
-      { item: "Honey", qty: 10, unit: "g" },
+      { item: "Honey", qty: 10, unit: "g" },,
+      method: "Mix chia seeds and almond milk in a jar. Stir well and refrigerate overnight (or at least 2 hours). Before eating, stir through protein powder. Top with sliced banana, peanut butter and drizzle of honey."
     ]},
     { name: "Protein oats (choc berry)", cal: 507, c: 66, f: 17, p: 31, ing: [
       { item: "Oats quick", qty: 55, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Strawberries", qty: 100, unit: "g" },
-      { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
+      { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },,
+      method: "Cook quick oats with water or milk on stovetop or microwave. Stir in protein powder while hot. Top with sliced strawberries and chopped dark chocolate squares."
     ]},
     { name: "Protein oats (carrot cake)", cal: 507, c: 62, f: 16, p: 33, ing: [
       { item: "Oats quick", qty: 50, unit: "g" },
@@ -104,7 +118,8 @@ const MEALS = {
       { item: "Carrot (grated)", qty: 1, unit: "" },
       { item: "Walnuts", qty: 15, unit: "g" },
       { item: "Honey", qty: 15, unit: "g" },
-      { item: "Sugar free caramel syrup", qty: 10, unit: "g" },
+      { item: "Sugar free caramel syrup", qty: 10, unit: "g" },,
+      method: "Cook quick oats. Stir in protein powder, grated carrot, honey and caramel syrup while hot. Top with chopped walnuts."
     ]},
     { name: "Pancake bowl bake", cal: 504, c: 58, f: 18, p: 31, ing: [
       { item: "Oat flour", qty: 40, unit: "g" },
@@ -114,21 +129,24 @@ const MEALS = {
       { item: "Baking powder", qty: 3, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
       { item: "Mixed berries", qty: 100, unit: "g" },
-      { item: "Yopro yoghurt", qty: 50, unit: "g" },
+      { item: "Yopro yoghurt", qty: 50, unit: "g" },,
+      method: "Preheat oven to 180°C. Mix oat flour, protein powder, baking powder, egg and almond milk into a thick batter. Pour into a greased ramekin or small baking dish. Press chocolate squares into the top and scatter berries over. Bake 18–22 mins until cooked through. Serve with Yopro on the side."
     ]},
     { name: "Yopro yoghurt bowl (snickers)", cal: 497, c: 50, f: 11, p: 28, ing: [
       { item: "Yopro yoghurt", qty: 250, unit: "g" },
       { item: "Pitted dates", qty: 6, unit: "" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
       { item: "Peanuts (chopped)", qty: 15, unit: "g" },
-      { item: "Natvia sugar free caramel sauce", qty: 5, unit: "g" },
+      { item: "Natvia sugar free caramel sauce", qty: 5, unit: "g" },,
+      method: "Spoon Yopro into a bowl. Pit and roughly chop dates, then scatter over yoghurt. Chop chocolate squares and peanuts and add on top. Drizzle caramel sauce over everything."
     ]},
     { name: "Yoghurt bowl (milo)", cal: 516, c: 75, f: 11, p: 32, ing: [
       { item: "Yopro yoghurt", qty: 250, unit: "g" },
       { item: "Milo cereal", qty: 30, unit: "g" },
       { item: "Mixed berries", qty: 100, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Nut butter", qty: 20, unit: "g" },
+      { item: "Nut butter", qty: 20, unit: "g" },,
+      method: "Add Yopro to a bowl. Top with Milo cereal, mixed berries and sliced banana. Drizzle nut butter over the top."
     ]},
     { name: "Tropical smoothie", cal: 512, c: 85, f: 8, p: 26, ing: [
       { item: "Frozen pineapple", qty: 100, unit: "g" },
@@ -136,13 +154,15 @@ const MEALS = {
       { item: "Banana", qty: 1, unit: "" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Coconut water", qty: 150, unit: "ml" },
-      { item: "Coconut yoghurt (Cocobella)", qty: 50, unit: "g" },
+      { item: "Coconut yoghurt (Cocobella)", qty: 50, unit: "g" },,
+      method: "Add all ingredients to a blender. Blend on high until completely smooth. Pour and serve immediately."
     ]},
     { name: "Date banana smoothie", cal: 504, c: 69, f: 13, p: 30, ing: [
       { item: "Banana (frozen)", qty: 1, unit: "" },
       { item: "Dates", qty: 6, unit: "" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
-      { item: "Peanut butter", qty: 20, unit: "g" },
+      { item: "Peanut butter", qty: 20, unit: "g" },,
+      method: "Add all ingredients to a blender with a splash of water or almond milk. Blend until smooth and creamy. Add more liquid if too thick."
     ]},
     { name: "Protein cake (banana choc)", cal: 505, c: 68, f: 16, p: 30, ing: [
       { item: "Macro Mike almond protein", qty: 30, unit: "g" },
@@ -151,7 +171,8 @@ const MEALS = {
       { item: "Baking powder", qty: 5, unit: "g" },
       { item: "Almond milk unsweetened", qty: 80, unit: "ml" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Chobani light", qty: 60, unit: "g" },
+      { item: "Chobani light", qty: 60, unit: "g" },,
+      method: "Mash banana well. Mix with protein powder, oat flour, baking powder and almond milk to form a thick batter. Pour into a greased mug or ramekin. Microwave 2–3 mins until cooked through (or bake at 175°C for 18 mins). Top with Chobani and chocolate squares."
     ]},
     { name: "Rice flour protein cake (berry coconut)", cal: 513, c: 64, f: 17, p: 33, ing: [
       { item: "Rice flour", qty: 30, unit: "g" },
@@ -160,7 +181,8 @@ const MEALS = {
       { item: "Strawberries/raspberries", qty: 150, unit: "g" },
       { item: "Yopro yoghurt", qty: 80, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Coconut shredded", qty: 5, unit: "g" },
+      { item: "Coconut shredded", qty: 5, unit: "g" },,
+      method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro to form a batter. Fold in berries. Pour into a greased muffin tin or small dish. Top with chopped chocolate and shredded coconut. Bake 20 mins."
     ]},
     { name: "Rice flour cake (apple)", cal: 514, c: 73, f: 10, p: 33, ing: [
       { item: "Rice flour", qty: 50, unit: "g" },
@@ -169,14 +191,16 @@ const MEALS = {
       { item: "Granny smith apple", qty: 1, unit: "" },
       { item: "Walnuts (chopped)", qty: 10, unit: "g" },
       { item: "Yopro yoghurt", qty: 80, unit: "g" },
-      { item: "Sugar free caramel syrup", qty: 5, unit: "g" },
+      { item: "Sugar free caramel syrup", qty: 5, unit: "g" },,
+      method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro and caramel syrup. Fold in diced apple and walnuts. Bake in a greased tin for 20–22 mins until golden."
     ]},
     { name: "Frittata bake/muffins", cal: 515, c: 28, f: 27, p: 44, ing: [
       { item: "Egg", qty: 2, unit: "" },
       { item: "Short cut bacon", qty: 80, unit: "g" },
       { item: "Spinach", qty: 30, unit: "g" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
-      { item: "Cherry tomatoes", qty: 50, unit: "g" },
+      { item: "Cherry tomatoes", qty: 50, unit: "g" },,
+      method: "Preheat oven to 180°C. Whisk eggs. Chop bacon and add to eggs with spinach, cheese and halved cherry tomatoes. Season well. Pour into greased muffin tin. Bake 18–20 mins until set and golden."
     ]},
   ],
   lunch: [
@@ -187,14 +211,16 @@ const MEALS = {
       { item: "Lettuce", qty: 20, unit: "g" },
       { item: "Tomato", qty: 30, unit: "g" },
       { item: "Pickles", qty: 20, unit: "g" },
-      { item: "Sugar reduced bbq sauce", qty: 15, unit: "g" },
+      { item: "Sugar reduced bbq sauce", qty: 15, unit: "g" },,
+      method: "Divide mince into two flat patties. Heat a pan or griddle to very high heat. Smash patties flat and cook 2–3 mins each side until well crusted. Add cheese to melt in last minute. Toast brioche bun. Assemble with lettuce, tomato, pickles and BBQ sauce."
     ]},
     { name: "Chicken caesar wrap", cal: 545, c: 36, f: 14, p: 63, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
       { item: "Chicken breast (cooked)", qty: 200, unit: "g" },
       { item: "Cos lettuce", qty: 40, unit: "g" },
       { item: "Light caesar dressing", qty: 20, unit: "g" },
-      { item: "Light tasty cheese", qty: 15, unit: "g" },
+      { item: "Light tasty cheese", qty: 15, unit: "g" },,
+      method: "Slice cooked chicken. Lay wrap flat, spread caesar dressing over it. Add cos lettuce, chicken and cheese. Roll tightly, tucking in the sides as you go."
     ]},
     { name: "Rice paper rolls (chicken)", cal: 456, c: 52, f: 6, p: 46, ing: [
       { item: "Rice paper sheets", qty: 4, unit: "" },
@@ -202,7 +228,8 @@ const MEALS = {
       { item: "Vermicelli noodles (cooked)", qty: 50, unit: "g" },
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Carrot (julienned)", qty: 50, unit: "g" },
-      { item: "Sweet chilli sauce", qty: 20, unit: "g" },
+      { item: "Sweet chilli sauce", qty: 20, unit: "g" },,
+      method: "Dip rice paper sheets briefly in warm water until pliable. Lay flat and add noodles, sliced chicken, cucumber and carrot. Roll tightly, folding in the sides. Serve with sweet chilli sauce for dipping."
     ]},
     { name: "Tuna rice bowl", cal: 498, c: 62, f: 5, p: 50, ing: [
       { item: "Basmati rice (cooked)", qty: 150, unit: "g" },
@@ -210,21 +237,24 @@ const MEALS = {
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Avocado", qty: 30, unit: "g" },
       { item: "Soy sauce", qty: 10, unit: "g" },
-      { item: "Sesame seeds", qty: 5, unit: "g" },
+      { item: "Sesame seeds", qty: 5, unit: "g" },,
+      method: "Cook or reheat rice. Drain tuna. Add rice to a bowl, flake tuna over the top. Add diced cucumber and avocado. Drizzle with soy sauce and sprinkle sesame seeds."
     ]},
     { name: "Chicken & roast veg wrap", cal: 531, c: 38, f: 15, p: 58, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
       { item: "Chicken breast (cooked)", qty: 180, unit: "g" },
       { item: "Mixed roast veg", qty: 100, unit: "g" },
       { item: "Light cream cheese", qty: 30, unit: "g" },
-      { item: "Spinach", qty: 20, unit: "g" },
+      { item: "Spinach", qty: 20, unit: "g" },,
+      method: "Preheat oven to 200°C. Toss mixed veg in a little oil and roast 20–25 mins. Warm wrap, spread cream cheese down the centre. Add sliced chicken, roast veg and spinach. Roll tightly."
     ]},
     { name: "Steak salad", cal: 487, c: 12, f: 18, p: 67, ing: [
       { item: "Lean beef steak", qty: 200, unit: "g" },
       { item: "Mixed salad leaves", qty: 80, unit: "g" },
       { item: "Cherry tomatoes", qty: 80, unit: "g" },
       { item: "Cucumber", qty: 60, unit: "g" },
-      { item: "Balsamic dressing", qty: 15, unit: "g" },
+      { item: "Balsamic dressing", qty: 15, unit: "g" },,
+      method: "Season steak well. Cook in a hot pan 3–4 mins each side for medium, or to your liking. Rest 3 mins then slice. Toss salad leaves, tomatoes and cucumber with balsamic dressing. Top with sliced steak."
     ]},
     { name: "Salmon sushi bowl", cal: 512, c: 58, f: 14, p: 40, ing: [
       { item: "Sushi rice (cooked)", qty: 150, unit: "g" },
@@ -233,7 +263,8 @@ const MEALS = {
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Soy sauce", qty: 10, unit: "g" },
       { item: "Sesame seeds", qty: 5, unit: "g" },
-      { item: "Nori sheets", qty: 1, unit: "" },
+      { item: "Nori sheets", qty: 1, unit: "" },,
+      method: "Cook sushi rice and season with a little rice vinegar if desired. Add to a bowl. Top with smoked salmon, sliced avocado, cucumber and nori torn into pieces. Drizzle soy sauce and sprinkle sesame seeds."
     ]},
     { name: "Chicken souvlaki wrap", cal: 538, c: 42, f: 12, p: 62, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
@@ -241,7 +272,8 @@ const MEALS = {
       { item: "Tzatziki", qty: 40, unit: "g" },
       { item: "Tomato", qty: 40, unit: "g" },
       { item: "Cos lettuce", qty: 30, unit: "g" },
-      { item: "Red onion", qty: 20, unit: "g" },
+      { item: "Red onion", qty: 20, unit: "g" },,
+      method: "Warm the wrap. Spread tzatziki down the middle. Add sliced cooked chicken, tomato, cos lettuce and thinly sliced red onion. Roll firmly."
     ]},
   ],
   dinner: [
@@ -252,7 +284,8 @@ const MEALS = {
       { item: "Soy sauce", qty: 15, unit: "g" },
       { item: "Oyster sauce", qty: 10, unit: "g" },
       { item: "Garlic (minced)", qty: 2, unit: "g" },
-      { item: "Sesame oil", qty: 5, unit: "g" },
+      { item: "Sesame oil", qty: 5, unit: "g" },,
+      method: "Cook hokkien noodles per packet. Slice chicken into strips and stir-fry in sesame oil with garlic over high heat 5–6 mins. Add stir fry veg and cook 3 more mins. Add noodles, soy sauce and oyster sauce, toss well and serve."
     ]},
     { name: "Beef mince tacos", cal: 601, c: 48, f: 22, p: 52, ing: [
       { item: "Extra lean beef mince", qty: 150, unit: "g" },
@@ -261,14 +294,16 @@ const MEALS = {
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Tomato salsa", qty: 40, unit: "g" },
       { item: "Cos lettuce", qty: 30, unit: "g" },
-      { item: "Taco seasoning", qty: 5, unit: "g" },
+      { item: "Taco seasoning", qty: 5, unit: "g" },,
+      method: "Brown mince in a pan over medium-high heat, breaking it up as it cooks. Add taco seasoning and a splash of water, cook 2 more mins. Warm taco shells in oven. Fill with mince, salsa, cheese, lettuce and a dollop of sour cream."
     ]},
     { name: "Teriyaki salmon & rice", cal: 597, c: 60, f: 18, p: 48, ing: [
       { item: "Salmon fillet", qty: 150, unit: "g" },
       { item: "Basmati rice (cooked)", qty: 180, unit: "g" },
       { item: "Teriyaki sauce", qty: 20, unit: "g" },
       { item: "Broccoli", qty: 100, unit: "g" },
-      { item: "Sesame seeds", qty: 5, unit: "g" },
+      { item: "Sesame seeds", qty: 5, unit: "g" },,
+      method: "Steam or microwave broccoli until tender. Cook salmon fillet in a pan over medium heat 3–4 mins each side. Brush with teriyaki sauce in the last minute. Serve over rice with broccoli, sprinkle with sesame seeds."
     ]},
     { name: "Chicken pesto pasta", cal: 614, c: 58, f: 16, p: 56, ing: [
       { item: "Chicken breast", qty: 180, unit: "g" },
@@ -276,7 +311,8 @@ const MEALS = {
       { item: "Pesto", qty: 20, unit: "g" },
       { item: "Cherry tomatoes", qty: 80, unit: "g" },
       { item: "Spinach", qty: 30, unit: "g" },
-      { item: "Light tasty cheese", qty: 15, unit: "g" },
+      { item: "Light tasty cheese", qty: 15, unit: "g" },,
+      method: "Cook pasta per packet. Dice chicken and cook in a pan until cooked through. Drain pasta and toss with pesto, chicken, halved cherry tomatoes and spinach. Top with grated cheese."
     ]},
     { name: "Beef bolognese", cal: 588, c: 54, f: 14, p: 58, ing: [
       { item: "Extra lean beef mince", qty: 150, unit: "g" },
@@ -284,7 +320,8 @@ const MEALS = {
       { item: "Tomato passata", qty: 150, unit: "g" },
       { item: "Onion", qty: 50, unit: "g" },
       { item: "Garlic (minced)", qty: 3, unit: "g" },
-      { item: "Italian herbs", qty: 2, unit: "g" },
+      { item: "Italian herbs", qty: 2, unit: "g" },,
+      method: "Dice onion and sauté in a pan until soft. Add garlic and mince, cook until browned. Add passata and Italian herbs. Simmer 15 mins. Cook pasta, drain and serve topped with bolognese sauce."
     ]},
     { name: "Greek chicken bake", cal: 561, c: 32, f: 16, p: 68, ing: [
       { item: "Chicken thigh (skinless)", qty: 250, unit: "g" },
@@ -293,7 +330,8 @@ const MEALS = {
       { item: "Feta cheese", qty: 30, unit: "g" },
       { item: "Lemon juice", qty: 15, unit: "g" },
       { item: "Baby potatoes", qty: 120, unit: "g" },
-      { item: "Oregano", qty: 2, unit: "g" },
+      { item: "Oregano", qty: 2, unit: "g" },,
+      method: "Preheat oven to 200°C. Halve baby potatoes and place in a baking dish with chicken thighs. Add cherry tomatoes and olives. Drizzle lemon juice over everything, sprinkle with oregano. Crumble feta on top. Bake 35–40 mins until chicken is cooked through."
     ]},
     { name: "Prawn fried rice", cal: 548, c: 62, f: 8, p: 54, ing: [
       { item: "Tiger prawns", qty: 200, unit: "g" },
@@ -302,7 +340,8 @@ const MEALS = {
       { item: "Frozen peas & corn", qty: 80, unit: "g" },
       { item: "Soy sauce", qty: 15, unit: "g" },
       { item: "Sesame oil", qty: 5, unit: "g" },
-      { item: "Spring onion", qty: 20, unit: "g" },
+      { item: "Spring onion", qty: 20, unit: "g" },,
+      method: "Cook rice and allow to cool. Heat sesame oil in a wok, add prawns and cook 2 mins. Push to the side, scramble the egg in the pan. Add rice, peas and corn, soy sauce and spring onion. Stir-fry everything together 3–4 mins."
     ]},
     { name: "Turkey meatball sub", cal: 579, c: 50, f: 14, p: 60, ing: [
       { item: "Turkey mince", qty: 200, unit: "g" },
@@ -310,53 +349,67 @@ const MEALS = {
       { item: "Tomato passata", qty: 80, unit: "g" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Italian herbs", qty: 2, unit: "g" },
-      { item: "Egg", qty: 0.5, unit: "" },
+      { item: "Egg", qty: 0.5, unit: "" },,
+      method: "Mix turkey mince with egg and Italian herbs, roll into small meatballs. Pan-fry in a little oil until browned all over, then simmer in passata 10 mins. Split and toast sub roll. Fill with meatballs and sauce, top with cheese and grill briefly to melt."
     ]},
   ],
   snack: [
     { name: "Protein shake + banana", cal: 253, c: 34, f: 4, p: 22, ing: [
       { item: "Macro Mike almond protein", qty: 30, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },
+      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },,
+      method: "Add protein powder and almond milk to a shaker or blender. Shake or blend until smooth. Eat banana on the side."
     ]},
     { name: "Rice cakes + cottage cheese", cal: 198, c: 28, f: 2, p: 18, ing: [
       { item: "Rice cakes plain", qty: 4, unit: "" },
-      { item: "Light cottage cheese", qty: 120, unit: "g" },
+      { item: "Light cottage cheese", qty: 120, unit: "g" },,
+      method: "Spread cottage cheese evenly over each rice cake. Season with a little salt and pepper if desired."
     ]},
     { name: "Apple + PB", cal: 221, c: 30, f: 9, p: 5, ing: [
       { item: "Pink lady apple", qty: 1, unit: "" },
-      { item: "Peanut butter", qty: 20, unit: "g" },
+      { item: "Peanut butter", qty: 20, unit: "g" },,
+      method: "Slice apple into wedges. Serve with peanut butter for dipping."
     ]},
     { name: "Greek yoghurt + berries", cal: 185, c: 18, f: 3, p: 22, ing: [
       { item: "Chobani light", qty: 170, unit: "g" },
-      { item: "Mixed berries", qty: 80, unit: "g" },
+      { item: "Mixed berries", qty: 80, unit: "g" },,
+      method: "Spoon Chobani into a bowl. Top with mixed berries."
     ]},
     { name: "Boiled eggs + veggies", cal: 176, c: 5, f: 10, p: 16, ing: [
       { item: "Egg", qty: 2, unit: "" },
       { item: "Cucumber", qty: 80, unit: "g" },
-      { item: "Cherry tomatoes", qty: 60, unit: "g" },
+      { item: "Cherry tomatoes", qty: 60, unit: "g" },,
+      method: "Place eggs in cold water, bring to a boil and cook 8–10 mins for hard boiled. Cool under cold water and peel. Serve with sliced cucumber and cherry tomatoes."
     ]},
     { name: "Tuna + crackers", cal: 214, c: 18, f: 4, p: 26, ing: [
       { item: "Tuna in springwater", qty: 95, unit: "g" },
-      { item: "Vita-weat crackers", qty: 4, unit: "" },
+      { item: "Vita-weat crackers", qty: 4, unit: "" },,
+      method: "Drain tuna. Serve on Vita-weat crackers."
     ]},
   ],
   funSnack: [
-    { name: "Chobani flip", cal: 158, c: 20, f: 5, p: 10, ing: [{ item: "Chobani flip yoghurt", qty: 1, unit: "" }]},
-    { name: "Protein bar", cal: 200, c: 22, f: 7, p: 15, ing: [{ item: "Protein bar (eg. Quest/Aussie Bodies)", qty: 1, unit: "" }]},
+    { name: "Chobani flip", cal: 158, c: 20, f: 5, p: 10, ing: [{ item: "Chobani flip yoghurt", qty: 1, unit: "" },
+      method: "Open the Chobani flip and mix the toppings into the yoghurt."]},
+    { name: "Protein bar", cal: 200, c: 22, f: 7, p: 15, ing: [{ item: "Protein bar (eg. Quest/Aussie Bodies)", qty: 1, unit: "" },
+      method: "Unwrap and eat."]},
     { name: "Rice cake PB choc", cal: 168, c: 22, f: 7, p: 5, ing: [
       { item: "Rice cakes plain", qty: 2, unit: "" },
       { item: "Peanut butter", qty: 15, unit: "g" },
-      { item: "Dark chocolate Lindt/Coles square", qty: 1, unit: "" },
+      { item: "Dark chocolate Lindt/Coles square", qty: 1, unit: "" },,
+      method: "Spread peanut butter over rice cakes. Chop or break dark chocolate square and place on top."
     ]},
     { name: "Date ball (homemade)", cal: 142, c: 24, f: 4, p: 3, ing: [
       { item: "Pitted dates", qty: 3, unit: "" },
       { item: "Desiccated coconut", qty: 5, unit: "g" },
-      { item: "Almond butter", qty: 8, unit: "g" },
+      { item: "Almond butter", qty: 8, unit: "g" },,
+      method: "Blend pitted dates and almond butter in a food processor until a sticky dough forms. Roll into balls and coat in desiccated coconut. Refrigerate 30 mins to firm up."
     ]},
-    { name: "Kit Kat mini", cal: 73, c: 8, f: 3, p: 0, ing: [{ item: "Kit Kat mini fun size", qty: 1, unit: "" }]},
-    { name: "Twirl mini", cal: 75, c: 8, f: 4, p: 1, ing: [{ item: "Twirl mini", qty: 1, unit: "" }]},
-    { name: "Coles mini wafer", cal: 72, c: 9, f: 3, p: 0, ing: [{ item: "Coles mini wafer snack pack", qty: 1, unit: "pack" }]},
+    { name: "Kit Kat mini", cal: 73, c: 8, f: 3, p: 0, ing: [{ item: "Kit Kat mini fun size", qty: 1, unit: "" },
+      method: "Enjoy as is."]},
+    { name: "Twirl mini", cal: 75, c: 8, f: 4, p: 1, ing: [{ item: "Twirl mini", qty: 1, unit: "" },
+      method: "Enjoy as is."]},
+    { name: "Coles mini wafer", cal: 72, c: 9, f: 3, p: 0, ing: [{ item: "Coles mini wafer snack pack", qty: 1, unit: "pack" },
+      method: "Enjoy as is."]},
   ],
 };
 
@@ -432,28 +485,30 @@ function buildPlan(targetCal, targetProtein, includePreworkout, seed, mealDb) {
   return best;
 }
 
-function planTotals(plan, skipped = []) {
+// skippedDays: { dinner: 2 } = skip dinner on 2 of the days
+function planTotals(plan, skippedDays = {}, dayCount = 1) {
   if (!plan) return { cal: 0, c: 0, f: 0, p: 0 };
   const slots = ['preworkout', 'breakfast', 'lunch', 'dinner', 'snack', 'funSnack'];
   return slots.reduce((acc, slot) => {
-    if (skipped.includes(slot)) return acc;
     const m = plan[slot];
     if (!m) return acc;
-    return { cal: acc.cal + m.cal, c: acc.c + m.c, f: acc.f + m.f, p: acc.p + m.p };
+    const times = Math.max(0, dayCount - (skippedDays[slot] || 0));
+    return { cal: acc.cal + m.cal * times, c: acc.c + m.c * times, f: acc.f + m.f * times, p: acc.p + m.p * times };
   }, { cal: 0, c: 0, f: 0, p: 0 });
 }
 
-function buildShoppingList(trainingPlan, restPlan, trainingDays, restDays, tSkipped, rSkipped) {
+function buildShoppingList(trainingPlan, restPlan, trainingDays, restDays, tSkippedDays, rSkippedDays) {
   const combined = {};
   const perMeal = [];
-  const addMeals = (plan, dayCount, dayLabel, skipped) => {
+  const addMeals = (plan, dayCount, dayLabel, skippedDays) => {
     if (!plan || dayCount === 0) return;
     ['preworkout', 'breakfast', 'lunch', 'dinner', 'snack', 'funSnack'].forEach(slot => {
-      if (skipped.includes(slot)) return;
       const meal = plan[slot];
       if (!meal) return;
-      const scaled = meal.ing.map(i => ({ item: i.item, qty: i.qty * dayCount, unit: i.unit }));
-      perMeal.push({ mealName: meal.name, slot, dayLabel, dayCount, ingredients: scaled });
+      const times = Math.max(0, dayCount - (skippedDays[slot] || 0));
+      if (times === 0) return;
+      const scaled = meal.ing.map(i => ({ item: i.item, qty: i.qty * times, unit: i.unit }));
+      perMeal.push({ mealName: meal.name, slot, dayLabel, dayCount: times, ingredients: scaled });
       scaled.forEach(i => {
         const key = `${i.item}|${i.unit}`;
         if (!combined[key]) combined[key] = { item: i.item, qty: 0, unit: i.unit };
@@ -461,8 +516,8 @@ function buildShoppingList(trainingPlan, restPlan, trainingDays, restDays, tSkip
       });
     });
   };
-  addMeals(trainingPlan, trainingDays, 'Training', tSkipped);
-  addMeals(restPlan, restDays, 'Rest', rSkipped);
+  addMeals(trainingPlan, trainingDays, 'Training', tSkippedDays);
+  addMeals(restPlan, restDays, 'Rest', rSkippedDays);
   const combinedArr = Object.values(combined).sort((a, b) => a.item.localeCompare(b.item));
   return { combined: combinedArr, perMeal };
 }
@@ -793,6 +848,69 @@ function DailyTracker({ trainingPlan, restPlan, tSkipped, rSkipped, trainingCal,
   );
 }
 
+
+// ============================================================
+// RECIPE DETAIL MODAL
+// ============================================================
+
+function RecipeModal({ meal, onClose }) {
+  const [servings, setServings] = useState(1);
+  if (!meal) return null;
+  return (
+    <div style={{ position: 'fixed', inset: 0, background: 'rgba(26,58,54,0.55)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
+      <div style={{ background: '#fff', borderRadius: 24, padding: 28, maxWidth: 500, width: '100%', maxHeight: '90vh', overflowY: 'auto', boxShadow: '0 20px 60px rgba(26,58,54,0.25)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: 16 }}>
+          <div>
+            {meal.custom && <div style={{ fontSize: 10, fontWeight: 700, color: '#4a9e7a', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>Custom Recipe</div>}
+            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: '#1a3a36', lineHeight: 1.25 }}>{meal.name}</h2>
+          </div>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#7a9692', padding: 4, flexShrink: 0, marginLeft: 12 }}><X size={20} /></button>
+        </div>
+        <div style={{ display: 'flex', gap: 8, marginBottom: 20, flexWrap: 'wrap' }}>
+          {[['🔥', `${meal.cal} cal`, '#f4b8b8'], ['🥩', `${meal.p}g protein`, '#c7a4d9'], ['🌾', `${meal.c}g carbs`, '#f0c987'], ['💧', `${meal.f}g fat`, '#b8d4f4']].map(([icon, label, bg]) => (
+            <div key={label} style={{ background: bg, borderRadius: 10, padding: '5px 11px', fontSize: 12, fontWeight: 700, color: '#1a3a36' }}>{icon} {label}</div>
+          ))}
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18, background: '#f9f5f1', borderRadius: 14, padding: '12px 16px' }}>
+          <span style={{ fontSize: 13, fontWeight: 600, color: '#1a3a36', flex: 1 }}>Servings</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <button onClick={() => setServings(s => Math.max(1, s - 1))} style={{ width: 32, height: 32, borderRadius: 8, border: '2px solid #d4e9e3', background: '#fff', cursor: 'pointer', fontSize: 18, fontWeight: 700, color: '#1a3a36', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>−</button>
+            <span style={{ fontSize: 18, fontWeight: 700, color: '#1a3a36', minWidth: 28, textAlign: 'center' }}>{servings}</span>
+            <button onClick={() => setServings(s => s + 1)} style={{ width: 32, height: 32, borderRadius: 8, border: '2px solid #d4e9e3', background: '#fff', cursor: 'pointer', fontSize: 18, fontWeight: 700, color: '#1a3a36', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+          </div>
+        </div>
+        <div style={{ marginBottom: 18 }}>
+          <div style={{ fontSize: 12, fontWeight: 700, color: '#1a3a36', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: 8 }}>
+            Ingredients {servings > 1 && <span style={{ fontWeight: 400, color: '#7a9692', textTransform: 'none', letterSpacing: 0 }}>— {servings} servings</span>}
+          </div>
+          <div style={{ display: 'grid', gap: 4 }}>
+            {meal.ing.map((ing, i) => {
+              const scaled = ing.qty * servings;
+              return (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 12px', background: i % 2 === 0 ? '#f9f5f1' : '#fff', borderRadius: 8 }}>
+                  <span style={{ fontSize: 13, color: '#1a3a36', fontWeight: 500 }}>{ing.item}</span>
+                  <div style={{ textAlign: 'right' }}>
+                    <span style={{ fontSize: 13, fontWeight: 700, color: '#1a3a36' }}>{fmtQty(scaled, ing.unit)}</span>
+                    {servings > 1 && <div style={{ fontSize: 10, color: '#7a9692' }}>{fmtQty(ing.qty, ing.unit)} × {servings}</div>}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div style={{ marginBottom: 16 }}>
+          <div style={{ fontSize: 12, fontWeight: 700, color: '#1a3a36', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: 8 }}>Method</div>
+          {meal.method
+            ? <div style={{ fontSize: 13, color: '#4a6864', lineHeight: 1.75, background: '#f9f5f1', borderRadius: 12, padding: '14px 16px', whiteSpace: 'pre-wrap' }}>{meal.method}</div>
+            : <div style={{ fontSize: 12, color: '#a8b8b5', fontStyle: 'italic' }}>No method added for this recipe.</div>
+          }
+        </div>
+        <button onClick={onClose} style={{ width: '100%', background: '#1a3a36', color: '#fff', border: 'none', borderRadius: 12, padding: '12px', fontWeight: 700, fontSize: 14, cursor: 'pointer', fontFamily: 'inherit' }}>Close</button>
+      </div>
+    </div>
+  );
+}
+
 // ============================================================
 // MAIN COMPONENT
 // ============================================================
@@ -847,14 +965,17 @@ export default function MealPlanner() {
   const [restOverrides, setRestOverrides] = usePersisted('mp_restOverrides', {});
 
   // slot toggles (deselect meals)
-  const [trainingSkipped, setTrainingSkipped] = usePersisted('mp_trainingSkipped', []);
-  const [restSkipped, setRestSkipped] = usePersisted('mp_restSkipped', []);
+  // Per-day skip counts: { dinner: 2 } = skip this slot on 2 days
+  const [trainingSkippedDays, setTrainingSkippedDays] = usePersisted('mp_trainingSkippedDays', {});
+  const [restSkippedDays, setRestSkippedDays] = usePersisted('mp_restSkippedDays', {});
 
   // custom recipes — persisted
   const [customMeals, setCustomMeals] = usePersisted('mp_customMeals', []);
   const [showAddRecipe, setShowAddRecipe] = useState(false);
 
-  // NEW: main tab
+  const [viewingRecipe, setViewingRecipe] = useState(null);
+
+  // main tab
   const [mainTab, setMainTab] = useState('planner');
 
   const restDayCount = Math.max(0, totalDays - trainingDayCount);
@@ -871,14 +992,14 @@ export default function MealPlanner() {
   const trainingPlan = useMemo(() => baseTraining ? applyOverrides(baseTraining, trainingOverrides, customMeals) : null, [baseTraining, trainingOverrides, customMeals]);
   const restPlan = useMemo(() => baseRest ? applyOverrides(baseRest, restOverrides, customMeals) : null, [baseRest, restOverrides, customMeals]);
 
-  const tTotals = planTotals(trainingPlan, trainingSkipped);
-  const rTotals = planTotals(restPlan, restSkipped);
+  const tTotals = planTotals(trainingPlan, trainingSkippedDays, trainingDayCount);
+  const rTotals = planTotals(restPlan, restSkippedDays, restDayCount);
   const weekCal = tTotals.cal * trainingDayCount + rTotals.cal * restDayCount;
   const weekProtein = tTotals.p * trainingDayCount + rTotals.p * restDayCount;
 
   const { combined: shoppingCombined, perMeal: shoppingPerMeal } = useMemo(
-    () => buildShoppingList(trainingPlan, restPlan, trainingDayCount, restDayCount, trainingSkipped, restSkipped),
-    [trainingPlan, restPlan, trainingDayCount, restDayCount, trainingSkipped, restSkipped]
+    () => buildShoppingList(trainingPlan, restPlan, trainingDayCount, restDayCount, trainingSkippedDays, restSkippedDays),
+    [trainingPlan, restPlan, trainingDayCount, restDayCount, trainingSkippedDays, restSkippedDays]
   );
 
   // Category-grouped shopping list
@@ -897,10 +1018,17 @@ export default function MealPlanner() {
   const currentSlots = activeMode === 'training'
     ? ['preworkout', 'breakfast', 'lunch', 'dinner', 'snack', 'funSnack']
     : ['breakfast', 'lunch', 'dinner', 'snack', 'funSnack'];
-  const currentSkipped = activeMode === 'training' ? trainingSkipped : restSkipped;
-  const setCurrentSkipped = activeMode === 'training' ? setTrainingSkipped : setRestSkipped;
+  const currentDayCount = activeMode === 'training' ? trainingDayCount : restDayCount;
+  const currentSkippedDays = activeMode === 'training' ? trainingSkippedDays : restSkippedDays;
+  const setCurrentSkippedDays = activeMode === 'training' ? setTrainingSkippedDays : setRestSkippedDays;
 
-  const toggleSkip = (slot) => setCurrentSkipped(s => s.includes(slot) ? s.filter(x => x !== slot) : [...s, slot]);
+  const slotSkipCount = (slot) => currentSkippedDays[slot] || 0;
+  const setSlotSkip = (slot, n) => {
+    setCurrentSkippedDays(s => {
+      if (n <= 0) { const next = { ...s }; delete next[slot]; return next; }
+      return { ...s, [slot]: Math.min(n, currentDayCount) };
+    });
+  };
 
   const swapMeal = (slot, mealName) => {
     if (activeMode === 'training') setTrainingOverrides(o => ({ ...o, [slot]: mealName }));
@@ -1073,13 +1201,13 @@ export default function MealPlanner() {
                 {trainingDayCount > 0 && (
                   <button onClick={() => { setActiveMode('training'); setSwapping(null); }} style={{ flex: 1, background: activeMode === 'training' ? '#1a3a36' : 'transparent', color: activeMode === 'training' ? '#fff' : '#1a3a36', border: 'none', borderRadius: 10, padding: '12px 16px', fontWeight: 600, fontSize: 14, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontFamily: 'inherit' }}>
                     <Dumbbell size={14} /> Training meals × {trainingDayCount}
-                    {trainingSkipped.length > 0 && <span style={{ background: '#f4b8b8', color: '#1a3a36', fontSize: 10, fontWeight: 700, borderRadius: 999, padding: '2px 6px' }}>{trainingSkipped.length} off</span>}
+                    {Object.keys(trainingSkippedDays).length > 0 && <span style={{ background: '#f4b8b8', color: '#1a3a36', fontSize: 10, fontWeight: 700, borderRadius: 999, padding: '2px 6px' }}>{Object.values(trainingSkippedDays).reduce((a,b)=>a+b,0)} skipped</span>}
                   </button>
                 )}
                 {restDayCount > 0 && (
                   <button onClick={() => { setActiveMode('rest'); setSwapping(null); }} style={{ flex: 1, background: activeMode === 'rest' ? '#1a3a36' : 'transparent', color: activeMode === 'rest' ? '#fff' : '#1a3a36', border: 'none', borderRadius: 10, padding: '12px 16px', fontWeight: 600, fontSize: 14, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontFamily: 'inherit' }}>
                     <Moon size={14} /> Rest meals × {restDayCount}
-                    {restSkipped.length > 0 && <span style={{ background: '#a8d5ba', color: '#1a3a36', fontSize: 10, fontWeight: 700, borderRadius: 999, padding: '2px 6px' }}>{restSkipped.length} off</span>}
+                    {Object.keys(restSkippedDays).length > 0 && <span style={{ background: '#a8d5ba', color: '#1a3a36', fontSize: 10, fontWeight: 700, borderRadius: 999, padding: '2px 6px' }}>{Object.values(restSkippedDays).reduce((a,b)=>a+b,0)} skipped</span>}
                   </button>
                 )}
               </div>
@@ -1105,84 +1233,78 @@ export default function MealPlanner() {
               </div>
             )}
 
-            {/* MEAL CARDS with deselect */}
-            {currentPlan && (activeMode === 'training' ? trainingDayCount > 0 : restDayCount > 0) && (
+            {/* MEAL CARDS with per-day skip + recipe view */}
+            {currentPlan && currentDayCount > 0 && (
               <div style={{ background: '#fff', borderRadius: 24, padding: 28, marginBottom: 20, boxShadow: '0 4px 20px rgba(26,58,54,0.08)' }}>
-                <div style={{ marginBottom: 6, fontSize: 12, color: '#a8b8b5', textAlign: 'right' }}>
-                  Tap <UtensilsCrossed size={11} style={{ display: 'inline', verticalAlign: 'middle' }} /> on a meal to skip it from this day type
+                <div style={{ marginBottom: 10, fontSize: 12, color: '#a8b8b5' }}>
+                  Tap a meal name to view its full recipe · Use −/+ to skip days (e.g. skip dinner on 2 of 5 days)
                 </div>
-                <div className="fade-in" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: 14 }}>
+                <div className="fade-in" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 14 }}>
                   {currentSlots.map(slot => {
                     const meal = currentPlan[slot];
                     if (!meal) return null;
-                    const isSkipped = currentSkipped.includes(slot);
+                    const skipCount = slotSkipCount(slot);
+                    const activeDays = Math.max(0, currentDayCount - skipCount);
+                    const fullySkipped = activeDays === 0;
                     const isSwapping = swapping === slot;
                     const list = effectiveMeals[slot] || [];
                     return (
-                      <div key={slot} className="meal-card" style={{ background: isSkipped ? '#f9f9f7' : '#f9f5f1', borderRadius: 16, padding: '16px', border: isSkipped ? '2px dashed #d4e9e3' : '2px solid transparent', opacity: isSkipped ? 0.6 : 1, transition: 'all 0.2s' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: 10 }}>
+                      <div key={slot} className="meal-card" style={{ background: fullySkipped ? '#f9f9f7' : '#f9f5f1', borderRadius: 16, padding: '16px', border: fullySkipped ? '2px dashed #d4e9e3' : skipCount > 0 ? '2px solid #f0c987' : '2px solid transparent', opacity: fullySkipped ? 0.55 : 1, transition: 'all 0.2s' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: 8 }}>
                           <div style={{ flex: 1, minWidth: 0 }}>
                             <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#7a9692' }}>
                               {SLOT_META[slot].icon} {SLOT_META[slot].label}
                             </div>
-                            <div style={{ fontSize: 15, fontWeight: 600, marginTop: 4, color: isSkipped ? '#a8b8b5' : '#1a3a36', lineHeight: 1.25, textDecoration: isSkipped ? 'line-through' : 'none' }}>
-                              {meal.name}
-                              {meal.custom && <span style={{ fontSize: 9, background: '#c7e9e2', color: '#1a3a36', borderRadius: 4, padding: '1px 5px', marginLeft: 5, fontWeight: 700, verticalAlign: 'middle' }}>CUSTOM</span>}
-                            </div>
-                          </div>
-                          <div style={{ display: 'flex', gap: 4, alignItems: 'center', marginLeft: 8, flexShrink: 0 }}>
-                            <div style={{ background: isSkipped ? '#eef3f1' : '#f5e8e0', color: '#1a3a36', padding: '3px 8px', borderRadius: 999, fontSize: 11, fontWeight: 700, whiteSpace: 'nowrap' }}>
-                              {isSkipped ? 'Off' : `${meal.cal} cal`}
-                            </div>
-                            <button
-                              onClick={() => { toggleSkip(slot); setSwapping(null); }}
-                              title={isSkipped ? 'Turn this meal back on' : 'Skip this meal (remove from plan & shopping)'}
-                              style={{ background: isSkipped ? '#c7e9e2' : 'none', border: isSkipped ? 'none' : '1.5px solid #d4e9e3', borderRadius: 8, width: 28, height: 28, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: isSkipped ? '#1a3a36' : '#a8b8b5', transition: 'all 0.15s', padding: 0 }}
-                            >
-                              {isSkipped ? <Check size={13} /> : <X size={13} />}
+                            <button onClick={() => setViewingRecipe(meal)} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left' }}>
+                              <div style={{ fontSize: 15, fontWeight: 600, marginTop: 3, color: fullySkipped ? '#a8b8b5' : '#1a3a36', lineHeight: 1.25, textDecoration: fullySkipped ? 'line-through' : 'underline dotted #b0ccc9' }}>
+                                {meal.name}
+                                {meal.custom && <span style={{ fontSize: 9, background: '#c7e9e2', color: '#1a3a36', borderRadius: 4, padding: '1px 5px', marginLeft: 5, fontWeight: 700, verticalAlign: 'middle' }}>CUSTOM</span>}
+                              </div>
                             </button>
                           </div>
+                          <div style={{ background: fullySkipped ? '#eef3f1' : skipCount > 0 ? '#f0c987' : '#f5e8e0', color: '#1a3a36', padding: '3px 8px', borderRadius: 999, fontSize: 11, fontWeight: 700, whiteSpace: 'nowrap', marginLeft: 8, flexShrink: 0 }}>
+                            {fullySkipped ? 'Off' : skipCount > 0 ? `${activeDays}/${currentDayCount} days` : `${meal.cal} cal`}
+                          </div>
                         </div>
-
-                        {!isSkipped && (
-                          <>
-                            <div style={{ display: 'flex', gap: 10, fontSize: 11, color: '#4a6864', marginBottom: 10 }}>
-                              <span style={{ fontWeight: 600 }}>P {meal.p}g</span>
-                              <span>C {meal.c}g</span>
-                              <span>F {meal.f}g</span>
-                            </div>
-                            {meal.method && (
-                              <div style={{ fontSize: 11, color: '#7a9692', marginBottom: 8, fontStyle: 'italic', borderLeft: '2px solid #d4e9e3', paddingLeft: 8, lineHeight: 1.5 }}>
-                                {meal.method.length > 80 ? meal.method.slice(0, 80) + '...' : meal.method}
-                              </div>
-                            )}
-                            {!isSwapping ? (
-                              <button className="btn" onClick={() => setSwapping(slot)} style={{ width: '100%', background: '#f5e8e0', border: 'none', borderRadius: 10, padding: '8px 12px', fontSize: 12, fontWeight: 600, color: '#1a3a36', fontFamily: 'inherit' }}>
-                                Swap this meal
-                              </button>
-                            ) : (
-                              <div>
-                                <div style={{ maxHeight: 220, overflowY: 'auto', marginBottom: 8, borderTop: '1px solid #eef3f1', paddingTop: 8 }}>
-                                  {list.map(m => (
-                                    <button key={m.name} onClick={() => swapMeal(slot, m.name)} style={{ display: 'block', width: '100%', textAlign: 'left', background: m.name === meal.name ? '#f5e8e0' : 'transparent', border: 'none', padding: '6px 8px', fontSize: 12, cursor: 'pointer', borderRadius: 6, color: '#1a3a36', fontFamily: 'inherit' }}>
-                                      {m.name === meal.name && <Check size={11} style={{ display: 'inline', marginRight: 4 }} />}
-                                      <span style={{ fontWeight: 500 }}>{m.name}</span>
-                                      {m.custom && <span style={{ fontSize: 9, background: '#c7e9e2', color: '#1a3a36', borderRadius: 3, padding: '1px 4px', marginLeft: 4, fontWeight: 700 }}>✦</span>}
-                                      <span style={{ color: '#7a9692', marginLeft: 4 }}>· {m.cal} cal · {m.p}g p</span>
-                                    </button>
-                                  ))}
-                                </div>
-                                <button onClick={() => setSwapping(null)} style={{ background: 'none', border: '1px solid #d4e9e3', borderRadius: 8, padding: '6px 12px', fontSize: 11, cursor: 'pointer', color: '#4a6864', fontFamily: 'inherit' }}>
-                                  <X size={11} style={{ display: 'inline', marginRight: 4 }} />Cancel
-                                </button>
-                              </div>
-                            )}
-                          </>
+                        {!fullySkipped && (
+                          <div style={{ display: 'flex', gap: 8, fontSize: 11, color: '#4a6864', marginBottom: 10 }}>
+                            <span style={{ fontWeight: 600 }}>P {meal.p}g</span>
+                            <span>C {meal.c}g</span>
+                            <span>F {meal.f}g</span>
+                          </div>
                         )}
-                        {isSkipped && (
-                          <button onClick={() => toggleSkip(slot)} style={{ width: '100%', background: '#d4e9e3', border: 'none', borderRadius: 10, padding: '8px 12px', fontSize: 12, fontWeight: 600, color: '#1a3a36', fontFamily: 'inherit', cursor: 'pointer' }}>
-                            <Check size={12} style={{ display: 'inline', marginRight: 4 }} />Restore meal
-                          </button>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10, background: '#fff', borderRadius: 10, padding: '7px 10px', border: '1.5px solid #eef3f1' }}>
+                          <span style={{ fontSize: 11, color: '#7a9692', flex: 1, fontWeight: 500 }}>
+                            {fullySkipped ? 'All days off' : skipCount > 0 ? `Skip ${skipCount} day${skipCount > 1 ? 's' : ''}` : 'Skip days'}
+                          </span>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                            <button onClick={() => setSlotSkip(slot, skipCount - 1)} disabled={skipCount === 0} style={{ width: 24, height: 24, borderRadius: 6, border: '1.5px solid #d4e9e3', background: skipCount === 0 ? '#f5f5f5' : '#fff', cursor: skipCount === 0 ? 'default' : 'pointer', fontSize: 14, fontWeight: 700, color: skipCount === 0 ? '#ccc' : '#1a3a36', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>−</button>
+                            <span style={{ fontSize: 13, fontWeight: 700, color: '#1a3a36', minWidth: 18, textAlign: 'center' }}>{skipCount}</span>
+                            <button onClick={() => setSlotSkip(slot, skipCount + 1)} disabled={skipCount >= currentDayCount} style={{ width: 24, height: 24, borderRadius: 6, border: '1.5px solid #d4e9e3', background: skipCount >= currentDayCount ? '#f5f5f5' : '#fff', cursor: skipCount >= currentDayCount ? 'default' : 'pointer', fontSize: 14, fontWeight: 700, color: skipCount >= currentDayCount ? '#ccc' : '#1a3a36', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+                          </div>
+                        </div>
+                        {!fullySkipped && (
+                          !isSwapping ? (
+                            <button className="btn" onClick={() => setSwapping(slot)} style={{ width: '100%', background: '#f5e8e0', border: 'none', borderRadius: 10, padding: '8px 12px', fontSize: 12, fontWeight: 600, color: '#1a3a36', fontFamily: 'inherit' }}>
+                              Swap this meal
+                            </button>
+                          ) : (
+                            <div>
+                              <div style={{ maxHeight: 200, overflowY: 'auto', marginBottom: 8, borderTop: '1px solid #eef3f1', paddingTop: 8 }}>
+                                {list.map(m => (
+                                  <button key={m.name} onClick={() => swapMeal(slot, m.name)} style={{ display: 'block', width: '100%', textAlign: 'left', background: m.name === meal.name ? '#f5e8e0' : 'transparent', border: 'none', padding: '6px 8px', fontSize: 12, cursor: 'pointer', borderRadius: 6, color: '#1a3a36', fontFamily: 'inherit' }}>
+                                    {m.name === meal.name && <Check size={11} style={{ display: 'inline', marginRight: 4 }} />}
+                                    <span style={{ fontWeight: 500 }}>{m.name}</span>
+                                    {m.custom && <span style={{ fontSize: 9, background: '#c7e9e2', color: '#1a3a36', borderRadius: 3, padding: '1px 4px', marginLeft: 4, fontWeight: 700 }}>✦</span>}
+                                    <span style={{ color: '#7a9692', marginLeft: 4 }}>· {m.cal} cal · {m.p}g p</span>
+                                  </button>
+                                ))}
+                              </div>
+                              <button onClick={() => setSwapping(null)} style={{ background: 'none', border: '1px solid #d4e9e3', borderRadius: 8, padding: '6px 12px', fontSize: 11, cursor: 'pointer', color: '#4a6864', fontFamily: 'inherit' }}>
+                                <X size={11} style={{ display: 'inline', marginRight: 4 }} />Cancel
+                              </button>
+                            </div>
+                          )
                         )}
                       </div>
                     );
@@ -1197,7 +1319,8 @@ export default function MealPlanner() {
         {mainTab === 'tracker' && (
           <DailyTracker
             trainingPlan={trainingPlan} restPlan={restPlan}
-            tSkipped={trainingSkipped} rSkipped={restSkipped}
+            tSkipped={Object.keys(trainingSkippedDays).filter(k => trainingSkippedDays[k] >= trainingDayCount)}
+            rSkipped={Object.keys(restSkippedDays).filter(k => restSkippedDays[k] >= restDayCount)}
             trainingCal={trainingCal} trainingProtein={trainingProtein}
             restCal={restCal} restProtein={restProtein}
             customMeals={customMeals}
@@ -1351,6 +1474,7 @@ export default function MealPlanner() {
 
       {/* Add Recipe Modal */}
       {showAddRecipe && <AddRecipeModal onSave={addCustomRecipe} onClose={() => setShowAddRecipe(false)} />}
+      {viewingRecipe && <RecipeModal meal={viewingRecipe} onClose={() => setViewingRecipe(null)} />}
     </div>
   );
 }
