@@ -797,10 +797,33 @@ function DailyTracker({ trainingPlan, restPlan, tSkipped, rSkipped, trainingCal,
 // MAIN COMPONENT
 // ============================================================
 
-function applyOverrides(plan, overrides) {
+// ============================================================
+// PERSISTENT STATE HELPERS
+// ============================================================
+
+function usePersisted(key, defaultValue) {
+  const [value, setValue] = useState(() => {
+    try {
+      const stored = localStorage.getItem(key);
+      return stored !== null ? JSON.parse(stored) : defaultValue;
+    } catch {
+      return defaultValue;
+    }
+  });
+  const setPersisted = (updater) => {
+    setValue(prev => {
+      const next = typeof updater === 'function' ? updater(prev) : updater;
+      try { localStorage.setItem(key, JSON.stringify(next)); } catch {}
+      return next;
+    });
+  };
+  return [value, setPersisted];
+}
+
+function applyOverrides(plan, overrides, customMeals = []) {
   const out = { ...plan };
+  const allMeals = [...Object.values(MEALS).flat(), ...customMeals];
   Object.entries(overrides).forEach(([slot, name]) => {
-    const allMeals = Object.values(MEALS).flat();
     const found = allMeals.find(m => m.name === name);
     if (found) out[slot] = found;
   });
@@ -808,30 +831,30 @@ function applyOverrides(plan, overrides) {
 }
 
 export default function MealPlanner() {
-  const [trainingCal, setTrainingCal] = useState(2541);
-  const [trainingProtein, setTrainingProtein] = useState(179);
-  const [restCal, setRestCal] = useState(2188);
-  const [restProtein, setRestProtein] = useState(172);
-  const [totalDays, setTotalDays] = useState(7);
-  const [trainingDayCount, setTrainingDayCount] = useState(5);
-  const [trainingSeed, setTrainingSeed] = useState(1);
-  const [restSeed, setRestSeed] = useState(2);
+  const [trainingCal, setTrainingCal] = usePersisted('mp_trainingCal', 2541);
+  const [trainingProtein, setTrainingProtein] = usePersisted('mp_trainingProtein', 179);
+  const [restCal, setRestCal] = usePersisted('mp_restCal', 2188);
+  const [restProtein, setRestProtein] = usePersisted('mp_restProtein', 172);
+  const [totalDays, setTotalDays] = usePersisted('mp_totalDays', 7);
+  const [trainingDayCount, setTrainingDayCount] = usePersisted('mp_trainingDayCount', 5);
+  const [trainingSeed, setTrainingSeed] = usePersisted('mp_trainingSeed', 1);
+  const [restSeed, setRestSeed] = usePersisted('mp_restSeed', 2);
   const [activeMode, setActiveMode] = useState('training');
   const [view, setView] = useState('combined');
   const [expanded, setExpanded] = useState({});
   const [swapping, setSwapping] = useState(null);
-  const [trainingOverrides, setTrainingOverrides] = useState({});
-  const [restOverrides, setRestOverrides] = useState({});
+  const [trainingOverrides, setTrainingOverrides] = usePersisted('mp_trainingOverrides', {});
+  const [restOverrides, setRestOverrides] = usePersisted('mp_restOverrides', {});
 
-  // NEW: slot toggles (deselect meals)
-  const [trainingSkipped, setTrainingSkipped] = useState([]);
-  const [restSkipped, setRestSkipped] = useState([]);
+  // slot toggles (deselect meals)
+  const [trainingSkipped, setTrainingSkipped] = usePersisted('mp_trainingSkipped', []);
+  const [restSkipped, setRestSkipped] = usePersisted('mp_restSkipped', []);
 
-  // NEW: custom recipes
-  const [customMeals, setCustomMeals] = useState([]);
+  // custom recipes — persisted
+  const [customMeals, setCustomMeals] = usePersisted('mp_customMeals', []);
   const [showAddRecipe, setShowAddRecipe] = useState(false);
 
-  // NEW: main tab
+  // main tab
   const [mainTab, setMainTab] = useState('planner');
 
   const restDayCount = Math.max(0, totalDays - trainingDayCount);
@@ -845,8 +868,8 @@ export default function MealPlanner() {
 
   const baseTraining = useMemo(() => buildPlan(trainingCal, trainingProtein, true, trainingSeed, effectiveMeals), [trainingCal, trainingProtein, trainingSeed, effectiveMeals]);
   const baseRest = useMemo(() => buildPlan(restCal, restProtein, false, restSeed, effectiveMeals), [restCal, restProtein, restSeed, effectiveMeals]);
-  const trainingPlan = useMemo(() => baseTraining ? applyOverrides(baseTraining, trainingOverrides) : null, [baseTraining, trainingOverrides]);
-  const restPlan = useMemo(() => baseRest ? applyOverrides(baseRest, restOverrides) : null, [baseRest, restOverrides]);
+  const trainingPlan = useMemo(() => baseTraining ? applyOverrides(baseTraining, trainingOverrides, customMeals) : null, [baseTraining, trainingOverrides, customMeals]);
+  const restPlan = useMemo(() => baseRest ? applyOverrides(baseRest, restOverrides, customMeals) : null, [baseRest, restOverrides, customMeals]);
 
   const tTotals = planTotals(trainingPlan, trainingSkipped);
   const rTotals = planTotals(restPlan, restSkipped);
@@ -889,6 +912,24 @@ export default function MealPlanner() {
   const shuffleCurrent = () => {
     if (activeMode === 'training') { setTrainingOverrides({}); setTrainingSeed(s => s + 1); }
     else { setRestOverrides({}); setRestSeed(s => s + 1); }
+  };
+
+  const removeCustomMeal = (idx) => {
+    const removed = customMeals[idx];
+    setCustomMeals(c => c.filter((_, i) => i !== idx));
+    // Clear any overrides pointing at the deleted recipe
+    if (removed) {
+      setTrainingOverrides(o => {
+        const next = { ...o };
+        Object.keys(next).forEach(k => { if (next[k] === removed.name) delete next[k]; });
+        return next;
+      });
+      setRestOverrides(o => {
+        const next = { ...o };
+        Object.keys(next).forEach(k => { if (next[k] === removed.name) delete next[k]; });
+        return next;
+      });
+    }
   };
 
   const addCustomRecipe = (recipe) => setCustomMeals(c => [...c, recipe]);
@@ -1274,7 +1315,7 @@ export default function MealPlanner() {
                         </div>
                         <div style={{ fontSize: 16, fontWeight: 700, color: '#1a3a36' }}>{meal.name}</div>
                       </div>
-                      <button onClick={() => setCustomMeals(c => c.filter((_, i) => i !== idx))}
+                      <button onClick={() => removeCustomMeal(idx)}
                         style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#cfdedb', padding: 4, flexShrink: 0 }}>
                         <Trash2 size={14} />
                       </button>
