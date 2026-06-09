@@ -6,26 +6,22 @@ const MEALS = {
     { name: "Banana wrap", cal: 353, c: 63, f: 6, p: 7, ing: [
       { item: "Banana", qty: 1, unit: "" },
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
-      { item: "Honey", qty: 15, unit: "g" },,
-      method: "Lay wrap flat. Peel and place banana at one end. Drizzle honey over banana. Roll wrap tightly around banana and slice in half."
-    ]},
+      { item: "Honey", qty: 15, unit: "g" }
+    ], method: "Lay wrap flat. Peel and place banana at one end. Drizzle honey over banana. Roll wrap tightly around banana and slice in half." },
     { name: "PB&J Muffin", cal: 353, c: 65, f: 7, p: 12, ing: [
       { item: "English muffin", qty: 2, unit: "" },
       { item: "Peanut butter", qty: 10, unit: "g" },
-      { item: "Jam", qty: 20, unit: "g" },,
-      method: "Toast English muffins until golden. Spread peanut butter on one half and jam on the other. Press together and enjoy."
-    ]},
+      { item: "Jam", qty: 20, unit: "g" }
+    ], method: "Toast English muffins until golden. Spread peanut butter on one half and jam on the other. Press together and enjoy." },
     { name: "Cocopops & banana", cal: 349, c: 76, f: 5, p: 5, ing: [
       { item: "Cocopops", qty: 55, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },,
-      method: "Pour Cocopops into a bowl. Add almond milk. Slice banana on top and eat immediately so cereal stays crunchy."
-    ]},
+      { item: "Almond milk unsweetened", qty: 200, unit: "ml" }
+    ], method: "Pour Cocopops into a bowl. Add almond milk. Slice banana on top and eat immediately so cereal stays crunchy." },
     { name: "Crumpets & jam", cal: 353, c: 73, f: 2, p: 10, ing: [
       { item: "Circle crumpet", qty: 3, unit: "" },
-      { item: "Jam", qty: 30, unit: "g" },,
-      method: "Toast crumpets until golden and crispy. Spread jam generously over each one while still warm."
-    ]},
+      { item: "Jam", qty: 30, unit: "g" }
+    ], method: "Toast crumpets until golden and crispy. Spread jam generously over each one while still warm." },
   ],
   breakfast: [
     { name: "Overnight oats chia (apple walnut)", cal: 496, c: 46, f: 18, p: 39, ing: [
@@ -33,38 +29,33 @@ const MEALS = {
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Chia seeds", qty: 15, unit: "g" },
       { item: "Pink lady apple", qty: 1, unit: "" },
-      { item: "Walnuts", qty: 15, unit: "g" },,
-      method: "Mix oats, protein powder and chia seeds in a jar. Pour in enough almond milk to cover well. Stir, seal and refrigerate overnight. In the morning top with diced apple and roughly chopped walnuts."
-    ]},
+      { item: "Walnuts", qty: 15, unit: "g" }
+    ], method: "Mix oats, protein powder and chia seeds in a jar. Pour in enough almond milk to cover well. Stir, seal and refrigerate overnight. In the morning top with diced apple and roughly chopped walnuts." },
     { name: "Overnight oats chia (banana PB)", cal: 491, c: 49, f: 16, p: 39, ing: [
       { item: "Oats", qty: 30, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Chia seeds", qty: 15, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Peanut butter", qty: 12, unit: "g" },,
-      method: "Mix oats, protein powder and chia seeds in a jar. Add almond milk to cover. Stir and refrigerate overnight. Top with sliced banana and a dollop of peanut butter before eating."
-    ]},
+      { item: "Peanut butter", qty: 12, unit: "g" }
+    ], method: "Mix oats, protein powder and chia seeds in a jar. Add almond milk to cover. Stir and refrigerate overnight. Top with sliced banana and a dollop of peanut butter before eating." },
     { name: "Brekky bagel (salmon cream cheese)", cal: 503, c: 52, f: 19, p: 28, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Smoked salmon", qty: 80, unit: "g" },
-      { item: "Light cream cheese", qty: 60, unit: "g" },,
-      method: "Slice and toast bagel. Spread cream cheese generously on both halves. Layer smoked salmon on top. Season with black pepper if desired."
-    ]},
+      { item: "Light cream cheese", qty: 60, unit: "g" }
+    ], method: "Slice and toast bagel. Spread cream cheese generously on both halves. Layer smoked salmon on top. Season with black pepper if desired." },
     { name: "Brekky bagel (cheesy bacon & egg)", cal: 511, c: 52, f: 19, p: 31, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Short cut bacon", qty: 100, unit: "g" },
       { item: "Egg", qty: 1, unit: "" },
-      { item: "Sugar reduced bbq sauce", qty: 10, unit: "g" },,
-      method: "Cook bacon in a pan over medium heat until crispy. Fry or scramble egg in the same pan. Toast bagel. Layer cheese, bacon and egg on the base, drizzle with BBQ sauce and top with the other half."
-    ]},
+      { item: "Sugar reduced bbq sauce", qty: 10, unit: "g" }
+    ], method: "Cook bacon in a pan over medium heat until crispy. Fry or scramble egg in the same pan. Toast bagel. Layer cheese, bacon and egg on the base, drizzle with BBQ sauce and top with the other half." },
     { name: "Brekky bagel (avo cottage cheese + chicken)", cal: 508, c: 52, f: 19, p: 36, ing: [
       { item: "Abe's bagel", qty: 1, unit: "" },
       { item: "Light cottage cheese", qty: 50, unit: "g" },
       { item: "Avocado", qty: 50, unit: "g" },
-      { item: "Chicken breast (cooked)", qty: 100, unit: "g" },,
-      method: "Toast bagel. Mash avocado with a pinch of salt. Spread cottage cheese on base, then avocado. Top with sliced cooked chicken breast and close bagel."
-    ]},
+      { item: "Chicken breast (cooked)", qty: 100, unit: "g" }
+    ], method: "Toast bagel. Mash avocado with a pinch of salt. Spread cottage cheese on base, then avocado. Top with sliced cooked chicken breast and close bagel." },
     { name: "Fudgy pumpkin brownie", cal: 514, c: 65, f: 17, p: 31, ing: [
       { item: "Butternut pumpkin (raw)", qty: 200, unit: "g" },
       { item: "Egg", qty: 0.5, unit: "" },
@@ -74,9 +65,8 @@ const MEALS = {
       { item: "Sugar free maple syrup", qty: 10, unit: "g" },
       { item: "Almond butter", qty: 15, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Chobani light", qty: 50, unit: "g" },,
-      method: "Preheat oven to 180°C. Steam or microwave pumpkin until soft, then mash well. Mix in egg, protein powder, cacao powder, baking powder, maple syrup and almond butter until smooth. Pour into a greased small baking dish. Press chocolate squares into the top. Bake 20–25 mins until just set. Serve with Chobani on the side."
-    ]},
+      { item: "Chobani light", qty: 50, unit: "g" }
+    ], method: "Preheat oven to 180°C. Steam or microwave pumpkin until soft, then mash well. Mix in egg, protein powder, cacao powder, baking powder, maple syrup and almond butter until smooth. Pour into a greased small baking dish. Press chocolate squares into the top. Bake 20–25 mins until just set. Serve with Chobani on the side." },
     { name: "Apple muffin", cal: 511, c: 65, f: 17, p: 31, ing: [
       { item: "Rolled oats", qty: 40, unit: "g" },
       { item: "Macro Mike almond protein", qty: 30, unit: "g" },
@@ -85,42 +75,37 @@ const MEALS = {
       { item: "Granny smith apple", qty: 1, unit: "" },
       { item: "Almond butter", qty: 10, unit: "g" },
       { item: "Chobani light", qty: 50, unit: "g" },
-      { item: "Walnuts", qty: 10, unit: "g" },,
-      method: "Preheat oven to 175°C. Mix oats, protein powder and baking powder. Stir in honey, almond butter, Chobani and grated apple. Fold in walnuts. Spoon into muffin tins and bake 18–22 mins until golden."
-    ]},
+      { item: "Walnuts", qty: 10, unit: "g" }
+    ], method: "Preheat oven to 175°C. Mix oats, protein powder and baking powder. Stir in honey, almond butter, Chobani and grated apple. Fold in walnuts. Spoon into muffin tins and bake 18–22 mins until golden." },
     { name: "Yoghurt bowl (choc banana)", cal: 508, c: 66, f: 13, p: 36, ing: [
       { item: "Chobani light", qty: 200, unit: "g" },
       { item: "Macro Mike almond protein", qty: 20, unit: "g" },
       { item: "Rice bubbles", qty: 25, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Mayver's hazelnut cashew cacao spread", qty: 20, unit: "g" },,
-      method: "Add Chobani to a bowl. Stir through protein powder until smooth. Top with rice bubbles, sliced banana and a drizzle of hazelnut cacao spread."
-    ]},
+      { item: "Mayver's hazelnut cashew cacao spread", qty: 20, unit: "g" }
+    ], method: "Add Chobani to a bowl. Stir through protein powder until smooth. Top with rice bubbles, sliced banana and a drizzle of hazelnut cacao spread." },
     { name: "Chia pudding (banana PB honey)", cal: 504, c: 49, f: 19, p: 35, ing: [
       { item: "Chia seeds", qty: 20, unit: "g" },
       { item: "Almond milk unsweetened", qty: 150, unit: "ml" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
       { item: "Peanut butter", qty: 20, unit: "g" },
-      { item: "Honey", qty: 10, unit: "g" },,
-      method: "Mix chia seeds and almond milk in a jar. Stir well and refrigerate overnight (or at least 2 hours). Before eating, stir through protein powder. Top with sliced banana, peanut butter and drizzle of honey."
-    ]},
+      { item: "Honey", qty: 10, unit: "g" }
+    ], method: "Mix chia seeds and almond milk in a jar. Stir well and refrigerate overnight (or at least 2 hours). Before eating, stir through protein powder. Top with sliced banana, peanut butter and drizzle of honey." },
     { name: "Protein oats (choc berry)", cal: 507, c: 66, f: 17, p: 31, ing: [
       { item: "Oats quick", qty: 55, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Strawberries", qty: 100, unit: "g" },
-      { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },,
-      method: "Cook quick oats with water or milk on stovetop or microwave. Stir in protein powder while hot. Top with sliced strawberries and chopped dark chocolate squares."
-    ]},
+      { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" }
+    ], method: "Cook quick oats with water or milk on stovetop or microwave. Stir in protein powder while hot. Top with sliced strawberries and chopped dark chocolate squares." },
     { name: "Protein oats (carrot cake)", cal: 507, c: 62, f: 16, p: 33, ing: [
       { item: "Oats quick", qty: 50, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Carrot (grated)", qty: 1, unit: "" },
       { item: "Walnuts", qty: 15, unit: "g" },
       { item: "Honey", qty: 15, unit: "g" },
-      { item: "Sugar free caramel syrup", qty: 10, unit: "g" },,
-      method: "Cook quick oats. Stir in protein powder, grated carrot, honey and caramel syrup while hot. Top with chopped walnuts."
-    ]},
+      { item: "Sugar free caramel syrup", qty: 10, unit: "g" }
+    ], method: "Cook quick oats. Stir in protein powder, grated carrot, honey and caramel syrup while hot. Top with chopped walnuts." },
     { name: "Pancake bowl bake", cal: 504, c: 58, f: 18, p: 31, ing: [
       { item: "Oat flour", qty: 40, unit: "g" },
       { item: "Egg", qty: 0.5, unit: "" },
@@ -129,41 +114,36 @@ const MEALS = {
       { item: "Baking powder", qty: 3, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
       { item: "Mixed berries", qty: 100, unit: "g" },
-      { item: "Yopro yoghurt", qty: 50, unit: "g" },,
-      method: "Preheat oven to 180°C. Mix oat flour, protein powder, baking powder, egg and almond milk into a thick batter. Pour into a greased ramekin or small baking dish. Press chocolate squares into the top and scatter berries over. Bake 18–22 mins until cooked through. Serve with Yopro on the side."
-    ]},
+      { item: "Yopro yoghurt", qty: 50, unit: "g" }
+    ], method: "Preheat oven to 180°C. Mix oat flour, protein powder, baking powder, egg and almond milk into a thick batter. Pour into a greased ramekin or small baking dish. Press chocolate squares into the top and scatter berries over. Bake 18–22 mins until cooked through. Serve with Yopro on the side." },
     { name: "Yopro yoghurt bowl (snickers)", cal: 497, c: 50, f: 11, p: 28, ing: [
       { item: "Yopro yoghurt", qty: 250, unit: "g" },
       { item: "Pitted dates", qty: 6, unit: "" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
       { item: "Peanuts (chopped)", qty: 15, unit: "g" },
-      { item: "Natvia sugar free caramel sauce", qty: 5, unit: "g" },,
-      method: "Spoon Yopro into a bowl. Pit and roughly chop dates, then scatter over yoghurt. Chop chocolate squares and peanuts and add on top. Drizzle caramel sauce over everything."
-    ]},
+      { item: "Natvia sugar free caramel sauce", qty: 5, unit: "g" }
+    ], method: "Spoon Yopro into a bowl. Pit and roughly chop dates, then scatter over yoghurt. Chop chocolate squares and peanuts and add on top. Drizzle caramel sauce over everything." },
     { name: "Yoghurt bowl (milo)", cal: 516, c: 75, f: 11, p: 32, ing: [
       { item: "Yopro yoghurt", qty: 250, unit: "g" },
       { item: "Milo cereal", qty: 30, unit: "g" },
       { item: "Mixed berries", qty: 100, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Nut butter", qty: 20, unit: "g" },,
-      method: "Add Yopro to a bowl. Top with Milo cereal, mixed berries and sliced banana. Drizzle nut butter over the top."
-    ]},
+      { item: "Nut butter", qty: 20, unit: "g" }
+    ], method: "Add Yopro to a bowl. Top with Milo cereal, mixed berries and sliced banana. Drizzle nut butter over the top." },
     { name: "Tropical smoothie", cal: 512, c: 85, f: 8, p: 26, ing: [
       { item: "Frozen pineapple", qty: 100, unit: "g" },
       { item: "Frozen mango", qty: 100, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
       { item: "Coconut water", qty: 150, unit: "ml" },
-      { item: "Coconut yoghurt (Cocobella)", qty: 50, unit: "g" },,
-      method: "Add all ingredients to a blender. Blend on high until completely smooth. Pour and serve immediately."
-    ]},
+      { item: "Coconut yoghurt (Cocobella)", qty: 50, unit: "g" }
+    ], method: "Add all ingredients to a blender. Blend on high until completely smooth. Pour and serve immediately." },
     { name: "Date banana smoothie", cal: 504, c: 69, f: 13, p: 30, ing: [
       { item: "Banana (frozen)", qty: 1, unit: "" },
       { item: "Dates", qty: 6, unit: "" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
-      { item: "Peanut butter", qty: 20, unit: "g" },,
-      method: "Add all ingredients to a blender with a splash of water or almond milk. Blend until smooth and creamy. Add more liquid if too thick."
-    ]},
+      { item: "Peanut butter", qty: 20, unit: "g" }
+    ], method: "Add all ingredients to a blender with a splash of water or almond milk. Blend until smooth and creamy. Add more liquid if too thick." },
     { name: "Protein cake (banana choc)", cal: 505, c: 68, f: 16, p: 30, ing: [
       { item: "Macro Mike almond protein", qty: 30, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
@@ -171,9 +151,8 @@ const MEALS = {
       { item: "Baking powder", qty: 5, unit: "g" },
       { item: "Almond milk unsweetened", qty: 80, unit: "ml" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Chobani light", qty: 60, unit: "g" },,
-      method: "Mash banana well. Mix with protein powder, oat flour, baking powder and almond milk to form a thick batter. Pour into a greased mug or ramekin. Microwave 2–3 mins until cooked through (or bake at 175°C for 18 mins). Top with Chobani and chocolate squares."
-    ]},
+      { item: "Chobani light", qty: 60, unit: "g" }
+    ], method: "Mash banana well. Mix with protein powder, oat flour, baking powder and almond milk to form a thick batter. Pour into a greased mug or ramekin. Microwave 2–3 mins until cooked through (or bake at 175°C for 18 mins). Top with Chobani and chocolate squares." },
     { name: "Rice flour protein cake (berry coconut)", cal: 513, c: 64, f: 17, p: 33, ing: [
       { item: "Rice flour", qty: 30, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
@@ -181,9 +160,8 @@ const MEALS = {
       { item: "Strawberries/raspberries", qty: 150, unit: "g" },
       { item: "Yopro yoghurt", qty: 80, unit: "g" },
       { item: "Dark chocolate Lindt/Coles square", qty: 2, unit: "" },
-      { item: "Coconut shredded", qty: 5, unit: "g" },,
-      method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro to form a batter. Fold in berries. Pour into a greased muffin tin or small dish. Top with chopped chocolate and shredded coconut. Bake 20 mins."
-    ]},
+      { item: "Coconut shredded", qty: 5, unit: "g" }
+    ], method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro to form a batter. Fold in berries. Pour into a greased muffin tin or small dish. Top with chopped chocolate and shredded coconut. Bake 20 mins." },
     { name: "Rice flour cake (apple)", cal: 514, c: 73, f: 10, p: 33, ing: [
       { item: "Rice flour", qty: 50, unit: "g" },
       { item: "Macro Mike almond protein", qty: 40, unit: "g" },
@@ -191,17 +169,15 @@ const MEALS = {
       { item: "Granny smith apple", qty: 1, unit: "" },
       { item: "Walnuts (chopped)", qty: 10, unit: "g" },
       { item: "Yopro yoghurt", qty: 80, unit: "g" },
-      { item: "Sugar free caramel syrup", qty: 5, unit: "g" },,
-      method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro and caramel syrup. Fold in diced apple and walnuts. Bake in a greased tin for 20–22 mins until golden."
-    ]},
+      { item: "Sugar free caramel syrup", qty: 5, unit: "g" }
+    ], method: "Preheat oven to 175°C. Mix rice flour, protein powder and baking powder. Stir in Yopro and caramel syrup. Fold in diced apple and walnuts. Bake in a greased tin for 20–22 mins until golden." },
     { name: "Frittata bake/muffins", cal: 515, c: 28, f: 27, p: 44, ing: [
       { item: "Egg", qty: 2, unit: "" },
       { item: "Short cut bacon", qty: 80, unit: "g" },
       { item: "Spinach", qty: 30, unit: "g" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
-      { item: "Cherry tomatoes", qty: 50, unit: "g" },,
-      method: "Preheat oven to 180°C. Whisk eggs. Chop bacon and add to eggs with spinach, cheese and halved cherry tomatoes. Season well. Pour into greased muffin tin. Bake 18–20 mins until set and golden."
-    ]},
+      { item: "Cherry tomatoes", qty: 50, unit: "g" }
+    ], method: "Preheat oven to 180°C. Whisk eggs. Chop bacon and add to eggs with spinach, cheese and halved cherry tomatoes. Season well. Pour into greased muffin tin. Bake 18–20 mins until set and golden." },
   ],
   lunch: [
     { name: "Smash burger", cal: 648, c: 43, f: 28, p: 54, ing: [
@@ -211,51 +187,45 @@ const MEALS = {
       { item: "Lettuce", qty: 20, unit: "g" },
       { item: "Tomato", qty: 30, unit: "g" },
       { item: "Pickles", qty: 20, unit: "g" },
-      { item: "Sugar reduced bbq sauce", qty: 15, unit: "g" },,
-      method: "Divide mince into two flat patties. Heat a pan or griddle to very high heat. Smash patties flat and cook 2–3 mins each side until well crusted. Add cheese to melt in last minute. Toast brioche bun. Assemble with lettuce, tomato, pickles and BBQ sauce."
-    ]},
+      { item: "Sugar reduced bbq sauce", qty: 15, unit: "g" }
+    ], method: "Divide mince into two flat patties. Heat a pan or griddle to very high heat. Smash patties flat and cook 2–3 mins each side until well crusted. Add cheese to melt in last minute. Toast brioche bun. Assemble with lettuce, tomato, pickles and BBQ sauce." },
     { name: "Chicken caesar wrap", cal: 545, c: 36, f: 14, p: 63, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
       { item: "Chicken breast (cooked)", qty: 200, unit: "g" },
       { item: "Cos lettuce", qty: 40, unit: "g" },
       { item: "Light caesar dressing", qty: 20, unit: "g" },
-      { item: "Light tasty cheese", qty: 15, unit: "g" },,
-      method: "Slice cooked chicken. Lay wrap flat, spread caesar dressing over it. Add cos lettuce, chicken and cheese. Roll tightly, tucking in the sides as you go."
-    ]},
+      { item: "Light tasty cheese", qty: 15, unit: "g" }
+    ], method: "Slice cooked chicken. Lay wrap flat, spread caesar dressing over it. Add cos lettuce, chicken and cheese. Roll tightly, tucking in the sides as you go." },
     { name: "Rice paper rolls (chicken)", cal: 456, c: 52, f: 6, p: 46, ing: [
       { item: "Rice paper sheets", qty: 4, unit: "" },
       { item: "Chicken breast (cooked)", qty: 150, unit: "g" },
       { item: "Vermicelli noodles (cooked)", qty: 50, unit: "g" },
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Carrot (julienned)", qty: 50, unit: "g" },
-      { item: "Sweet chilli sauce", qty: 20, unit: "g" },,
-      method: "Dip rice paper sheets briefly in warm water until pliable. Lay flat and add noodles, sliced chicken, cucumber and carrot. Roll tightly, folding in the sides. Serve with sweet chilli sauce for dipping."
-    ]},
+      { item: "Sweet chilli sauce", qty: 20, unit: "g" }
+    ], method: "Dip rice paper sheets briefly in warm water until pliable. Lay flat and add noodles, sliced chicken, cucumber and carrot. Roll tightly, folding in the sides. Serve with sweet chilli sauce for dipping." },
     { name: "Tuna rice bowl", cal: 498, c: 62, f: 5, p: 50, ing: [
       { item: "Basmati rice (cooked)", qty: 150, unit: "g" },
       { item: "Tuna in springwater", qty: 185, unit: "g" },
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Avocado", qty: 30, unit: "g" },
       { item: "Soy sauce", qty: 10, unit: "g" },
-      { item: "Sesame seeds", qty: 5, unit: "g" },,
-      method: "Cook or reheat rice. Drain tuna. Add rice to a bowl, flake tuna over the top. Add diced cucumber and avocado. Drizzle with soy sauce and sprinkle sesame seeds."
-    ]},
+      { item: "Sesame seeds", qty: 5, unit: "g" }
+    ], method: "Cook or reheat rice. Drain tuna. Add rice to a bowl, flake tuna over the top. Add diced cucumber and avocado. Drizzle with soy sauce and sprinkle sesame seeds." },
     { name: "Chicken & roast veg wrap", cal: 531, c: 38, f: 15, p: 58, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
       { item: "Chicken breast (cooked)", qty: 180, unit: "g" },
       { item: "Mixed roast veg", qty: 100, unit: "g" },
       { item: "Light cream cheese", qty: 30, unit: "g" },
-      { item: "Spinach", qty: 20, unit: "g" },,
-      method: "Preheat oven to 200°C. Toss mixed veg in a little oil and roast 20–25 mins. Warm wrap, spread cream cheese down the centre. Add sliced chicken, roast veg and spinach. Roll tightly."
-    ]},
+      { item: "Spinach", qty: 20, unit: "g" }
+    ], method: "Preheat oven to 200°C. Toss mixed veg in a little oil and roast 20–25 mins. Warm wrap, spread cream cheese down the centre. Add sliced chicken, roast veg and spinach. Roll tightly." },
     { name: "Steak salad", cal: 487, c: 12, f: 18, p: 67, ing: [
       { item: "Lean beef steak", qty: 200, unit: "g" },
       { item: "Mixed salad leaves", qty: 80, unit: "g" },
       { item: "Cherry tomatoes", qty: 80, unit: "g" },
       { item: "Cucumber", qty: 60, unit: "g" },
-      { item: "Balsamic dressing", qty: 15, unit: "g" },,
-      method: "Season steak well. Cook in a hot pan 3–4 mins each side for medium, or to your liking. Rest 3 mins then slice. Toss salad leaves, tomatoes and cucumber with balsamic dressing. Top with sliced steak."
-    ]},
+      { item: "Balsamic dressing", qty: 15, unit: "g" }
+    ], method: "Season steak well. Cook in a hot pan 3–4 mins each side for medium, or to your liking. Rest 3 mins then slice. Toss salad leaves, tomatoes and cucumber with balsamic dressing. Top with sliced steak." },
     { name: "Salmon sushi bowl", cal: 512, c: 58, f: 14, p: 40, ing: [
       { item: "Sushi rice (cooked)", qty: 150, unit: "g" },
       { item: "Smoked salmon", qty: 100, unit: "g" },
@@ -263,18 +233,16 @@ const MEALS = {
       { item: "Cucumber", qty: 50, unit: "g" },
       { item: "Soy sauce", qty: 10, unit: "g" },
       { item: "Sesame seeds", qty: 5, unit: "g" },
-      { item: "Nori sheets", qty: 1, unit: "" },,
-      method: "Cook sushi rice and season with a little rice vinegar if desired. Add to a bowl. Top with smoked salmon, sliced avocado, cucumber and nori torn into pieces. Drizzle soy sauce and sprinkle sesame seeds."
-    ]},
+      { item: "Nori sheets", qty: 1, unit: "" }
+    ], method: "Cook sushi rice and season with a little rice vinegar if desired. Add to a bowl. Top with smoked salmon, sliced avocado, cucumber and nori torn into pieces. Drizzle soy sauce and sprinkle sesame seeds." },
     { name: "Chicken souvlaki wrap", cal: 538, c: 42, f: 12, p: 62, ing: [
       { item: "Mission original white wrap 70g", qty: 1, unit: "" },
       { item: "Chicken breast (cooked)", qty: 200, unit: "g" },
       { item: "Tzatziki", qty: 40, unit: "g" },
       { item: "Tomato", qty: 40, unit: "g" },
       { item: "Cos lettuce", qty: 30, unit: "g" },
-      { item: "Red onion", qty: 20, unit: "g" },,
-      method: "Warm the wrap. Spread tzatziki down the middle. Add sliced cooked chicken, tomato, cos lettuce and thinly sliced red onion. Roll firmly."
-    ]},
+      { item: "Red onion", qty: 20, unit: "g" }
+    ], method: "Warm the wrap. Spread tzatziki down the middle. Add sliced cooked chicken, tomato, cos lettuce and thinly sliced red onion. Roll firmly." },
   ],
   dinner: [
     { name: "Chicken & veg stir fry (noodles)", cal: 582, c: 52, f: 10, p: 68, ing: [
@@ -284,9 +252,8 @@ const MEALS = {
       { item: "Soy sauce", qty: 15, unit: "g" },
       { item: "Oyster sauce", qty: 10, unit: "g" },
       { item: "Garlic (minced)", qty: 2, unit: "g" },
-      { item: "Sesame oil", qty: 5, unit: "g" },,
-      method: "Cook hokkien noodles per packet. Slice chicken into strips and stir-fry in sesame oil with garlic over high heat 5–6 mins. Add stir fry veg and cook 3 more mins. Add noodles, soy sauce and oyster sauce, toss well and serve."
-    ]},
+      { item: "Sesame oil", qty: 5, unit: "g" }
+    ], method: "Cook hokkien noodles per packet. Slice chicken into strips and stir-fry in sesame oil with garlic over high heat 5–6 mins. Add stir fry veg and cook 3 more mins. Add noodles, soy sauce and oyster sauce, toss well and serve." },
     { name: "Beef mince tacos", cal: 601, c: 48, f: 22, p: 52, ing: [
       { item: "Extra lean beef mince", qty: 150, unit: "g" },
       { item: "Mini taco shells", qty: 3, unit: "" },
@@ -294,35 +261,31 @@ const MEALS = {
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Tomato salsa", qty: 40, unit: "g" },
       { item: "Cos lettuce", qty: 30, unit: "g" },
-      { item: "Taco seasoning", qty: 5, unit: "g" },,
-      method: "Brown mince in a pan over medium-high heat, breaking it up as it cooks. Add taco seasoning and a splash of water, cook 2 more mins. Warm taco shells in oven. Fill with mince, salsa, cheese, lettuce and a dollop of sour cream."
-    ]},
+      { item: "Taco seasoning", qty: 5, unit: "g" }
+    ], method: "Brown mince in a pan over medium-high heat, breaking it up as it cooks. Add taco seasoning and a splash of water, cook 2 more mins. Warm taco shells in oven. Fill with mince, salsa, cheese, lettuce and a dollop of sour cream." },
     { name: "Teriyaki salmon & rice", cal: 597, c: 60, f: 18, p: 48, ing: [
       { item: "Salmon fillet", qty: 150, unit: "g" },
       { item: "Basmati rice (cooked)", qty: 180, unit: "g" },
       { item: "Teriyaki sauce", qty: 20, unit: "g" },
       { item: "Broccoli", qty: 100, unit: "g" },
-      { item: "Sesame seeds", qty: 5, unit: "g" },,
-      method: "Steam or microwave broccoli until tender. Cook salmon fillet in a pan over medium heat 3–4 mins each side. Brush with teriyaki sauce in the last minute. Serve over rice with broccoli, sprinkle with sesame seeds."
-    ]},
+      { item: "Sesame seeds", qty: 5, unit: "g" }
+    ], method: "Steam or microwave broccoli until tender. Cook salmon fillet in a pan over medium heat 3–4 mins each side. Brush with teriyaki sauce in the last minute. Serve over rice with broccoli, sprinkle with sesame seeds." },
     { name: "Chicken pesto pasta", cal: 614, c: 58, f: 16, p: 56, ing: [
       { item: "Chicken breast", qty: 180, unit: "g" },
       { item: "Pasta (dry)", qty: 80, unit: "g" },
       { item: "Pesto", qty: 20, unit: "g" },
       { item: "Cherry tomatoes", qty: 80, unit: "g" },
       { item: "Spinach", qty: 30, unit: "g" },
-      { item: "Light tasty cheese", qty: 15, unit: "g" },,
-      method: "Cook pasta per packet. Dice chicken and cook in a pan until cooked through. Drain pasta and toss with pesto, chicken, halved cherry tomatoes and spinach. Top with grated cheese."
-    ]},
+      { item: "Light tasty cheese", qty: 15, unit: "g" }
+    ], method: "Cook pasta per packet. Dice chicken and cook in a pan until cooked through. Drain pasta and toss with pesto, chicken, halved cherry tomatoes and spinach. Top with grated cheese." },
     { name: "Beef bolognese", cal: 588, c: 54, f: 14, p: 58, ing: [
       { item: "Extra lean beef mince", qty: 150, unit: "g" },
       { item: "Pasta (dry)", qty: 80, unit: "g" },
       { item: "Tomato passata", qty: 150, unit: "g" },
       { item: "Onion", qty: 50, unit: "g" },
       { item: "Garlic (minced)", qty: 3, unit: "g" },
-      { item: "Italian herbs", qty: 2, unit: "g" },,
-      method: "Dice onion and sauté in a pan until soft. Add garlic and mince, cook until browned. Add passata and Italian herbs. Simmer 15 mins. Cook pasta, drain and serve topped with bolognese sauce."
-    ]},
+      { item: "Italian herbs", qty: 2, unit: "g" }
+    ], method: "Dice onion and sauté in a pan until soft. Add garlic and mince, cook until browned. Add passata and Italian herbs. Simmer 15 mins. Cook pasta, drain and serve topped with bolognese sauce." },
     { name: "Greek chicken bake", cal: 561, c: 32, f: 16, p: 68, ing: [
       { item: "Chicken thigh (skinless)", qty: 250, unit: "g" },
       { item: "Cherry tomatoes", qty: 80, unit: "g" },
@@ -330,9 +293,8 @@ const MEALS = {
       { item: "Feta cheese", qty: 30, unit: "g" },
       { item: "Lemon juice", qty: 15, unit: "g" },
       { item: "Baby potatoes", qty: 120, unit: "g" },
-      { item: "Oregano", qty: 2, unit: "g" },,
-      method: "Preheat oven to 200°C. Halve baby potatoes and place in a baking dish with chicken thighs. Add cherry tomatoes and olives. Drizzle lemon juice over everything, sprinkle with oregano. Crumble feta on top. Bake 35–40 mins until chicken is cooked through."
-    ]},
+      { item: "Oregano", qty: 2, unit: "g" }
+    ], method: "Preheat oven to 200°C. Halve baby potatoes and place in a baking dish with chicken thighs. Add cherry tomatoes and olives. Drizzle lemon juice over everything, sprinkle with oregano. Crumble feta on top. Bake 35–40 mins until chicken is cooked through." },
     { name: "Prawn fried rice", cal: 548, c: 62, f: 8, p: 54, ing: [
       { item: "Tiger prawns", qty: 200, unit: "g" },
       { item: "Basmati rice (cooked)", qty: 180, unit: "g" },
@@ -340,52 +302,44 @@ const MEALS = {
       { item: "Frozen peas & corn", qty: 80, unit: "g" },
       { item: "Soy sauce", qty: 15, unit: "g" },
       { item: "Sesame oil", qty: 5, unit: "g" },
-      { item: "Spring onion", qty: 20, unit: "g" },,
-      method: "Cook rice and allow to cool. Heat sesame oil in a wok, add prawns and cook 2 mins. Push to the side, scramble the egg in the pan. Add rice, peas and corn, soy sauce and spring onion. Stir-fry everything together 3–4 mins."
-    ]},
+      { item: "Spring onion", qty: 20, unit: "g" }
+    ], method: "Cook rice and allow to cool. Heat sesame oil in a wok, add prawns and cook 2 mins. Push to the side, scramble the egg in the pan. Add rice, peas and corn, soy sauce and spring onion. Stir-fry everything together 3–4 mins." },
     { name: "Turkey meatball sub", cal: 579, c: 50, f: 14, p: 60, ing: [
       { item: "Turkey mince", qty: 200, unit: "g" },
       { item: "Sub roll", qty: 1, unit: "" },
       { item: "Tomato passata", qty: 80, unit: "g" },
       { item: "Light tasty cheese", qty: 20, unit: "g" },
       { item: "Italian herbs", qty: 2, unit: "g" },
-      { item: "Egg", qty: 0.5, unit: "" },,
-      method: "Mix turkey mince with egg and Italian herbs, roll into small meatballs. Pan-fry in a little oil until browned all over, then simmer in passata 10 mins. Split and toast sub roll. Fill with meatballs and sauce, top with cheese and grill briefly to melt."
-    ]},
+      { item: "Egg", qty: 0.5, unit: "" }
+    ], method: "Mix turkey mince with egg and Italian herbs, roll into small meatballs. Pan-fry in a little oil until browned all over, then simmer in passata 10 mins. Split and toast sub roll. Fill with meatballs and sauce, top with cheese and grill briefly to melt." },
   ],
   snack: [
     { name: "Protein shake + banana", cal: 253, c: 34, f: 4, p: 22, ing: [
       { item: "Macro Mike almond protein", qty: 30, unit: "g" },
       { item: "Banana", qty: 1, unit: "" },
-      { item: "Almond milk unsweetened", qty: 200, unit: "ml" },,
-      method: "Add protein powder and almond milk to a shaker or blender. Shake or blend until smooth. Eat banana on the side."
-    ]},
+      { item: "Almond milk unsweetened", qty: 200, unit: "ml" }
+    ], method: "Add protein powder and almond milk to a shaker or blender. Shake or blend until smooth. Eat banana on the side." },
     { name: "Rice cakes + cottage cheese", cal: 198, c: 28, f: 2, p: 18, ing: [
       { item: "Rice cakes plain", qty: 4, unit: "" },
-      { item: "Light cottage cheese", qty: 120, unit: "g" },,
-      method: "Spread cottage cheese evenly over each rice cake. Season with a little salt and pepper if desired."
-    ]},
+      { item: "Light cottage cheese", qty: 120, unit: "g" }
+    ], method: "Spread cottage cheese evenly over each rice cake. Season with a little salt and pepper if desired." },
     { name: "Apple + PB", cal: 221, c: 30, f: 9, p: 5, ing: [
       { item: "Pink lady apple", qty: 1, unit: "" },
-      { item: "Peanut butter", qty: 20, unit: "g" },,
-      method: "Slice apple into wedges. Serve with peanut butter for dipping."
-    ]},
+      { item: "Peanut butter", qty: 20, unit: "g" }
+    ], method: "Slice apple into wedges. Serve with peanut butter for dipping." },
     { name: "Greek yoghurt + berries", cal: 185, c: 18, f: 3, p: 22, ing: [
       { item: "Chobani light", qty: 170, unit: "g" },
-      { item: "Mixed berries", qty: 80, unit: "g" },,
-      method: "Spoon Chobani into a bowl. Top with mixed berries."
-    ]},
+      { item: "Mixed berries", qty: 80, unit: "g" }
+    ], method: "Spoon Chobani into a bowl. Top with mixed berries." },
     { name: "Boiled eggs + veggies", cal: 176, c: 5, f: 10, p: 16, ing: [
       { item: "Egg", qty: 2, unit: "" },
       { item: "Cucumber", qty: 80, unit: "g" },
-      { item: "Cherry tomatoes", qty: 60, unit: "g" },,
-      method: "Place eggs in cold water, bring to a boil and cook 8–10 mins for hard boiled. Cool under cold water and peel. Serve with sliced cucumber and cherry tomatoes."
-    ]},
+      { item: "Cherry tomatoes", qty: 60, unit: "g" }
+    ], method: "Place eggs in cold water, bring to a boil and cook 8–10 mins for hard boiled. Cool under cold water and peel. Serve with sliced cucumber and cherry tomatoes." },
     { name: "Tuna + crackers", cal: 214, c: 18, f: 4, p: 26, ing: [
       { item: "Tuna in springwater", qty: 95, unit: "g" },
-      { item: "Vita-weat crackers", qty: 4, unit: "" },,
-      method: "Drain tuna. Serve on Vita-weat crackers."
-    ]},
+      { item: "Vita-weat crackers", qty: 4, unit: "" }
+    ], method: "Drain tuna. Serve on Vita-weat crackers." },
   ],
   funSnack: [
     { name: "Chobani flip", cal: 158, c: 20, f: 5, p: 10, ing: [{ item: "Chobani flip yoghurt", qty: 1, unit: "" },
@@ -395,15 +349,13 @@ const MEALS = {
     { name: "Rice cake PB choc", cal: 168, c: 22, f: 7, p: 5, ing: [
       { item: "Rice cakes plain", qty: 2, unit: "" },
       { item: "Peanut butter", qty: 15, unit: "g" },
-      { item: "Dark chocolate Lindt/Coles square", qty: 1, unit: "" },,
-      method: "Spread peanut butter over rice cakes. Chop or break dark chocolate square and place on top."
-    ]},
+      { item: "Dark chocolate Lindt/Coles square", qty: 1, unit: "" }
+    ], method: "Spread peanut butter over rice cakes. Chop or break dark chocolate square and place on top." },
     { name: "Date ball (homemade)", cal: 142, c: 24, f: 4, p: 3, ing: [
       { item: "Pitted dates", qty: 3, unit: "" },
       { item: "Desiccated coconut", qty: 5, unit: "g" },
-      { item: "Almond butter", qty: 8, unit: "g" },,
-      method: "Blend pitted dates and almond butter in a food processor until a sticky dough forms. Roll into balls and coat in desiccated coconut. Refrigerate 30 mins to firm up."
-    ]},
+      { item: "Almond butter", qty: 8, unit: "g" }
+    ], method: "Blend pitted dates and almond butter in a food processor until a sticky dough forms. Roll into balls and coat in desiccated coconut. Refrigerate 30 mins to firm up." },
     { name: "Kit Kat mini", cal: 73, c: 8, f: 3, p: 0, ing: [{ item: "Kit Kat mini fun size", qty: 1, unit: "" },
       method: "Enjoy as is."]},
     { name: "Twirl mini", cal: 75, c: 8, f: 4, p: 1, ing: [{ item: "Twirl mini", qty: 1, unit: "" },
