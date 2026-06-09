@@ -798,7 +798,7 @@ function DailyTracker({ trainingPlan, restPlan, tSkipped, rSkipped, trainingCal,
 // ============================================================
 
 // ============================================================
-// PERSISTENT STATE HELPERS
+// PERSISTENT STATE HELPER
 // ============================================================
 
 function usePersisted(key, defaultValue) {
@@ -854,7 +854,7 @@ export default function MealPlanner() {
   const [customMeals, setCustomMeals] = usePersisted('mp_customMeals', []);
   const [showAddRecipe, setShowAddRecipe] = useState(false);
 
-  // main tab
+  // NEW: main tab
   const [mainTab, setMainTab] = useState('planner');
 
   const restDayCount = Math.max(0, totalDays - trainingDayCount);
@@ -917,7 +917,6 @@ export default function MealPlanner() {
   const removeCustomMeal = (idx) => {
     const removed = customMeals[idx];
     setCustomMeals(c => c.filter((_, i) => i !== idx));
-    // Clear any overrides pointing at the deleted recipe
     if (removed) {
       setTrainingOverrides(o => {
         const next = { ...o };
